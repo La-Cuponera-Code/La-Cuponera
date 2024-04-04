@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+   
+ <head>
+      <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="Codescandy" name="author">
+      <title>Homepage v1 - eCommerce HTML Template - FreshCart</title>
+
+      <link href="assets/libs/slick-carousel/slick/slick.css" rel="stylesheet" />
+      <link href="assets/libs/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+      <link href="assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
+
+      <!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+
+
+<!-- Libs CSS -->
+<link href="assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
+<link href="assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="assets/css/theme.min.css">
+
+<style>
+
+ 
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "ProtestRiot Regular";
+    src: url("ProtestRiot-Regular.ttf");
+}
+
+
+@media only screen and (min-width: 980px) {
+    /* Estilos para pantallas medianas y grandes */
+
+    body{
+      overflow-y: hidden;
+   }
+
+h1{
+font-family:"ProtestRiot Regular" ;
+
+}
+ 
+ 
+ 
+.face {
+   width:10%;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.insta {
+   width:10%;
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
+
+.wsap {
+   width:10%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.cupon2{
+   width: 30%;
+   position:fixed;
+  top: 5%;
+right: -6%;
+ animation-duration: 3s;
+  animation-name: slidein2;
+ 
+  z-index: 200;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+   }
+
+  to {
+    margin-left: -2%;
+   }
+}
+
+@keyframes slidein2 {
+  from {
+  right: -100%;
+   }
+
+  to {
+ right:  -6%;
+   }
+}
+
+.logo{
+   width: 100%;
+   margin-left: -5%;
+}
+
+ 
+
+.contene{
+   background-image: url('./images/cupon.png');
+   display: flex;
+  width: 400px; 
+    height: 200px; 
+     background-size: cover; 
+     text-align: center;
+     background-position: center; /* Posicionar la imagen en el centro */
+    background-repeat: no-repeat; /* No repetir la imagen */
+margin-left:-36%;
+margin-top:36%;
+
+     transform: rotate(-5deg); /* Rotar el elemento en 20 grados */
+
+}
+
+.contene2{
+    display: grid;
+  width:100%; 
+  height: 100%;
+justify-content: center;
+text-align: center;
+
+}
+
+
+
+.contene2 img{
+  position: absolute;
+  width:30%; 
+ right: 4%;
+bottom: -2%;
+margin:0% auto 0%;
+}
+
+.contene2 div{
+display: grid;
+justify-content: center;
+}
+
+
+.contene h1{
+   
+ margin:10% auto 0%;
+ font-size: 7.5vh;
+}
+
+.contene2 h2{
+   text-align: center;
+   width: 45%;
+   margin-top:15vw;
+display: block;
+white-space: wrap;
+    margin-left:15%;
+   font-size: 2.9vw;
+   font-family: 'Montserrat Regular';
+   font-weight: bold;
+ 
+   border-radius: 10px;
+   padding: .7%;
+  
+  }
+  #advertencia{
+   display: none;
+
+   width: 20vh;
+  left:-20vw;
+  top:20vh;
+  }
+
+  .pagando{
+  position: fixed;
+  width:58vh; 
+ right: 2%;
+bottom: -2%;
+margin:0% auto 0%;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+
+   body{
+      overflow-y: hidden;
+   }
+
+
+   h1{
+font-family:"ProtestRiot Regular" ;
+
+}
+ 
+ 
+ 
+.face {
+   width:10%;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.insta {
+   width:10%;
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
+
+.wsap {
+   width:10%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.cupon2{
+   width: 30%;
+   position:fixed;
+  top: 5%;
+right: -6%;
+ animation-duration: 3s;
+  animation-name: slidein2;
+ 
+  z-index: 200;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+   }
+
+  to {
+    margin-left: -2%;
+   }
+}
+
+@keyframes slidein2 {
+  from {
+  right: -100%;
+   }
+
+  to {
+ right:  -6%;
+   }
+}
+
+.logo{
+   width: 100%;
+   margin-left: -5%;
+}
+
+ 
+
+.contene{
+   background-image: url('./images/cupon.png');
+   display: flex;
+  width: 400px; 
+    height: 200px; 
+     background-size: cover; 
+     text-align: center;
+     background-position: center; /* Posicionar la imagen en el centro */
+    background-repeat: no-repeat; /* No repetir la imagen */
+margin-left:-36%;
+margin-top:36%;
+
+     transform: rotate(-5deg); /* Rotar el elemento en 20 grados */
+
+}
+
+.contene2{
+    display: grid;
+  width:100%; 
+justify-content: center;
+text-align: center;
+
+}
+
+
+
+.contene2 img{
+  position: absolute;
+  width:40%; 
+ right: 4%;
+bottom: -2%;
+margin:0% auto 0%;
+}
+
+.contene2 div{
+display: grid;
+justify-content: center;
+}
+
+
+.contene h1{
+   
+ margin:10% auto 0%;
+ font-size: 7.5vh;
+}
+
+.contene2 h2{
+   text-align: center;
+   width: 50vw;
+   margin-top:22vh;
+display: block;
+white-space: wrap;
+    margin-left:-22vw;
+    z-index:200;
+   font-size:2.5vw;
+   font-family: 'Montserrat Regular';
+   font-weight: bold;
+ 
+   border-radius: 10px;
+   padding: .7%;
+  
+  }
+  #advertencia{
+ display: none;
+  }
+
+  .pagando{
+  position: fixed;
+  width:50dvi; 
+ right: -5%;
+bottom: -2%;
+margin:0% auto 0%;
+}
+ 
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+   body{
+      overflow-y: none;
+   
+   }
+
+
+
+
+h1{
+font-family:"ProtestRiot Regular" ;
+
+}
+
+
+
+.face {
+   position:relative;
+float: left;  
+ left: -5%;
+top:170%;
+   width:25%;
+animation-duration: 2s;
+animation-name: slidein;
+}
+
+.insta {
+   position:relative;
+float: left;  
+top:170%;
+
+ left: -5%;
+
+   width:25%;
+animation-duration: 2.5s;
+animation-name: slidein;
+}
+
+.wsap {
+   position:relative;
+float: left;  
+ left: -5%;
+ top:170%;
+
+   width:25%;
+animation-duration: 3s;
+animation-name: slidein;
+}
+
+.cupon2{
+width: 40%;
+position:fixed;
+top: 15%;
+right: -8%;
+animation-duration: 3s;
+animation-name: slidein2;
+
+z-index: 200;
+}
+
+@keyframes slidein {
+from {
+ margin-left: -100%;
+}
+
+to {
+ margin-left: -2%;
+}
+}
+
+@keyframes slidein2 {
+from {
+right: -100%;
+}
+
+to {
+right:  -8%;
+}
+}
+
+.logo{
+width: 180%;
+margin-left: 0%;
+}
+
+
+
+.contene{
+background-image: url('./images/cupon.png');
+display: flex;
+width: 400px; 
+ height: 200px; 
+  background-size: cover; 
+  text-align: center;
+  background-position: center; /* Posicionar la imagen en el centro */
+ background-repeat: no-repeat; /* No repetir la imagen */
+margin-left:-36%;
+margin-top:36%;
+
+  transform: rotate(-5deg); /* Rotar el elemento en 20 grados */
+
+}
+
+.contene2{
+ display: grid;
+width:100%; 
+height: auto;
+justify-content: center;
+text-align: center;
+
+}
+
+.pagando{
+  position: fixed;
+  width:50dvh; 
+ right: -20%;
+bottom: 0%;
+margin:0% auto -10%;
+}
+
+ 
+.contene2 div{
+display: grid;
+justify-content: center;
+}
+
+
+.contene h1{
+
+margin:10% auto 0%;
+font-size: 7.5vh;
+}
+
+.contene2 h2{
+text-align: center;
+width: 80%;
+margin:15vh auto 0%;
+display: block;
+white-space: wrap;
+ 
+font-size:5.9vw;
+font-family: 'Montserrat Regular';
+font-weight: bold;
+
+border-radius: 10px;
+padding: .7%;
+
+}
+#advertencia{
+width: 30%;
+display: none;
+position: static;
+left:-20vw;
+margin:0% auto 0%;
+top:20vh;
+}}
+
+
+</style>
+
+   </head>
+
+   <body>
+      
+<div style="display: grid; position: fixed;top:35% ">
+   <img class="face" style=" margin:2% 0% 0% -2%" src="images/face.png">     
+   <img class="insta" style="  margin:2% 0% 0% -2%" src="images/insta.png">  
+   <img class="wsap" style="  margin:2% 0% 0% -2%" src="images/wsap.png">  
+</div>
+
+<div style="display: grid; position: fixed;top:35% ">
+   <img class="cupon2"   src="images/cupon2.png">     
+ 
+</div>
+
+
+<div class=" ">
+	 
+	<div class="py-5">
+		<div class="container">
+			<div style="margin:0% auto 0%; display:flex;  " class="row w-100 align-items-center gx-lg-2 gx-0">
+				<div class="col-xxl-2 col-lg-3 col-md-6 col-5">
+					<a class="navbar-brand d-none d-lg-block" href="#">
+						<img class="logo" src="./images/logo.png?ver=2.0" alt="eCommerce HTML Template" />
+					</a>
+					<div class="d-flex justify-content-between w-100 d-lg-none">
+						<a class="navbar-brand" href="#">
+							<img class="logo" src="./images/logo.png?ver=2.0" alt="eCommerce HTML Template" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xxl-5 col-lg-5 d-none d-lg-block">
+					<form action="#">
+						<div class="input-group">
+							<input class="form-control rounded" type="search" placeholder="Search for products" />
+							<span class="input-group-append">
+								<button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end" type="button">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-search"
+									>
+										<circle cx="11" cy="11" r="8"></circle>
+										<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+									</svg>
+								</button>
+							</span>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-2 col-xxl-3 d-none d-lg-block">
+					<!-- Button trigger modal -->
+					<button  type="button" class="btn btn-outline-gray-400 text-muted" data-bs-toggle="modal" data-bs-target="#locationModal">
+						<i class="feather-icon icon-map-pin me-2"></i>
+                  <a id="ciudad" ></a>
+
+					</button>
+				</div>
+			 
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+<div class="contene2">
+ 
+<div>
+   <img id="advertencia" src="images/advertencia.png">
+
+<h2>Te pedimos paciencia, pronto, muy pronto podrás disfrutar de las mejores ofertas y cupones AQUÍ!</h2>
+</div>
+
+
+</div>
+<img class="pagando" src="images/pagando.png">
+
+   </body>
+
+<!-- Mirrored from freshcart.codescandy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 03:18:49 GMT -->
+</html>
