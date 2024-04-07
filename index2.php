@@ -4,252 +4,251 @@
 <!-- Mirrored from freshcart.codescandy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 03:18:25 GMT -->
 <head>
       <!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta content="Codescandy" name="author">
-      <title>La Cuponera</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Codescandy" name="author">
+    <title>La Cuponera</title>
 
-      <link href="assets/libs/slick-carousel/slick/slick.css" rel="stylesheet" />
-      <link href="assets/libs/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
-      <link href="assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
+    <link href="plantilla/assets/libs/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="plantilla/assets/libs/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+    <link href="plantilla/assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
 
       <!-- Favicon icon-->
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/cupon%20(2)">
 
 
-<!-- Libs CSS -->
-<link href="assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
-<link href="assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
-<link href="assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+      <!-- Libs CSS -->
+    <link href="plantilla/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="plantilla/assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
+    <link href="plantilla/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
 
 
-<!-- Theme CSS -->
-<link rel="stylesheet" href="assets/css/theme.min.css?ver=2.2">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="plantilla/assets/css/theme.min.css?ver=2.2">
 
-<style>
+    <style>
 
-#nav-fruitsandveg-tab:active{
-      background-color: ;
-   }
-   .icono{
+        #nav-fruitsandveg-tab:active{
+              /* background-color: ; */
+           }
+           .icono{
 
-      width:22px;
-      margin-right:6%;
-   }
-.nav-pills .nav-link.active {
-   background-color: #fffdbe; /* Cambia este valor al color que desees para el estado desactivado */
-       border:1px solid #c3b722; /* Cambia este valor al color que desees */
-      color: #28292d;
+              width:22px;
+              margin-right:6%;
+           }
+        .nav-pills .nav-link.active {
+           background-color: #fffdbe; /* Cambia este valor al color que desees para el estado desactivado */
+               border:1px solid #c3b722; /* Cambia este valor al color que desees */
+              color: #28292d;
+
+
+        }
+        .nav-pills .nav-link {
+           /* background-color:  ; Cambia este valor al color que desees para el estado desactivado */
+              border-color: #fcec2d;
+              color:black;
+        }
+
+        .yellower{
+           background-color: #f9ed48; /* Cambia este valor al color que desees para el estado desactivado */
+               border:1px solid #c3b722; /* Cambia este valor al color que desees */
+              color: #28292d;
+
+        }
+
+        .yellower:hover{
+           background-color: #e5d939; /* Cambia este valor al color que desees para el estado desactivado */
+               border:1px solid #c3b722; /* Cambia este valor al color que desees */
+              color: #28292d;
+
+        }
+
+
+        .fs-6{
+
+        }
+        .fs-6:hover{
+        color:#e5d939;
+
+        }
+
+        #btn-action{
+        }
+
+        #btn-action:hover{
+        color:black;
+           background-color: #e5d939; /* Cambia este valor al color que desees para el estado desactivado */
+
+        }
+
+
+
+
+        .text-uppercase{
+
+           color:#c3b722;
+
+        }
+        .card{
+
+
+        }
+        .card:hover{
+
+           border:1px solid #c3b722;
+
+        }
+
+        #card{
+
+
+        }
+
+        #card.card:hover {
+           border:1px solid #c3b722 !important;
+
+            border-color: #c3b722 !important;
+        }
+
+        #card:hover{
+           border:1px solid #c3b722;
+
+
+        }
+
+        #card:end{
+
+        border:1px solid #c3b722;
+
+        }
+        .face {
+          animation-duration: 2s;
+          animation-name: slidein;
+        }
+
+        .insta {
+          animation-duration: 2.5s;
+          animation-name: slidein;
+        }
+
+        .wsap {
+          animation-duration: 3s;
+          animation-name: slidein;
+        }
+
+        @keyframes slidein {
+          from {
+            margin-left: -100%;
+           }
+
+          to {
+            margin-left: -2%;
+           }
+        }
+
+        .logo{
+           width: 100%;
+           margin-left: -5%;
+        }
+
+        .alldepartaments{
+
+           background-color: red;
+        }
+
+        /* Define tu propio color personalizado */
+        .custom-btn {
+              /* background-color: ; Cambia este valor al color que desees */
+              border-color: #f9ed48; /* Cambia este valor al color que desees */
+              color: #e4d529; /* Color del texto del botón */
+        }
+
+        .custom-btn:active {
+          background-color:red ; /* Cambia este valor al color que desees */
+          border-color: #f9ed48; /* Cambia este valor al color que desees */
+          color: #e4d529; /* Color del texto del botón */
+        }
+
+        /* Estilo para el botón cuando está activo */
+        .custom-btn:hover {
+          background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
+          border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
+        }
+
+
+        .custom-btn3 {
+          /* background-color: ; Cambia este valor al color que desees para el estado activo */
+          border-color: black; /* Cambia este valor al color que desees para el estado activo */
+        }
+
+        .custom-btn3:active{
+          /* background-color: ; Cambia este valor al color que desees */
+          border-color: #f9ed48; /* Cambia este valor al color que desees */
+          color: #e4d529; /* Color del texto del botón */
+        }
+
+
+
+        /* Estilo para el botón cuando está activo */
+        .custom-btn3:hover {
+          background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
+          border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
+        }
+
+        .custom-btn2 {
+           border-color: #f9ed48; /* Cambia este valor al color que desees */
+          color: #e4d529; /* Color del texto del botón */
+        }
+
+        /* Estilo para el botón cuando está activo */
+        .custom-btn2:hover {
+          background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
+          border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
+        }
+
+        /* Estilo para el botón cuando está desactivado */
+        .custom-btn.disabled,
+        .custom-btn:disabled {
+          background-color: #f9ed48; /* Cambia este valor al color que desees para el estado desactivado */
+          border-color: #fcec2d; /* Cambia este valor al color que desees para el estado desactivado */
+        }
+
+        .amarillo{
  
+        color: black;
+        }
 
-}
-.nav-pills .nav-link {
-   background-color:  ; /* Cambia este valor al color que desees para el estado desactivado */
-      border-color: #fcec2d;
-      color:black;
-}
+        .amarillo:hover{
 
-.yellower{
-   background-color: #f9ed48; /* Cambia este valor al color que desees para el estado desactivado */
-       border:1px solid #c3b722; /* Cambia este valor al color que desees */
-      color: #28292d;
+        color: #e4d529;
+        }
+        #amarillo{
 
-}
+          color: black;
+        }
 
-.yellower:hover{
-   background-color: #e5d939; /* Cambia este valor al color que desees para el estado desactivado */
-       border:1px solid #c3b722; /* Cambia este valor al color que desees */
-      color: #28292d;
+        #amarillo:hover{
 
-}
+        color: #e4d529;
+        }
 
+        #amarillo2{
+         color: #e4d529;
+        }
 
-.fs-6{
-    
-}
-.fs-6:hover{
-color:#e5d939;
-   
-}
+        #amarillo3{
+        color: black;
+        background-color: #e4d529;
+        }
+    </style>
+</head>
 
-#btn-action{
-}
-
-#btn-action:hover{
-color:black;
-   background-color: #e5d939; /* Cambia este valor al color que desees para el estado desactivado */
-
-}
-
- 
-
-
-.text-uppercase{
-
-   color:#c3b722;
-
-}
-.card{
-
- 
-}
-.card:hover{
-
-   border:1px solid #c3b722;
- 
-}
-
-#card{
-
- 
-}
-
-#card.card:hover {
-   border:1px solid #c3b722 !important;
-
-    border-color: #c3b722 !important;
-}
-
-#card:hover{
-   border:1px solid #c3b722;
-
- 
-}
-
-#card:end{
-
-border:1px solid #c3b722;
-
-}
-.face {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-
-.insta {
-  animation-duration: 2.5s;
-  animation-name: slidein;
-}
-
-.wsap {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: -100%;
-   }
-
-  to {
-    margin-left: -2%;
-   }
-}
-
-.logo{
-   width: 100%;
-   margin-left: -5%;
-}
-
-.alldepartaments{
-
-   background-color: red;
-}
-
-/* Define tu propio color personalizado */
-.custom-btn {
-      background-color: ; /* Cambia este valor al color que desees */
-      border-color: #f9ed48; /* Cambia este valor al color que desees */
-      color: #e4d529; /* Color del texto del botón */
-    }
-
-    .custom-btn:active {
-      background-color:red ; /* Cambia este valor al color que desees */
-      border-color: #f9ed48; /* Cambia este valor al color que desees */
-      color: #e4d529; /* Color del texto del botón */
-    }
-
-    /* Estilo para el botón cuando está activo */
-    .custom-btn:hover {
-      background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
-      border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
-    }
-
-
-    .custom-btn3 {
-      background-color: ; /* Cambia este valor al color que desees para el estado activo */
-      border-color: black; /* Cambia este valor al color que desees para el estado activo */
-    }
-
-    .custom-btn3:active{
-      background-color: ; /* Cambia este valor al color que desees */
-      border-color: #f9ed48; /* Cambia este valor al color que desees */
-      color: #e4d529; /* Color del texto del botón */
-    }
-
-    
-
-    /* Estilo para el botón cuando está activo */
-    .custom-btn3:hover {
-      background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
-      border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
-    }
-
-    .custom-btn2 {
-       border-color: #f9ed48; /* Cambia este valor al color que desees */
-      color: #e4d529; /* Color del texto del botón */
-    }
-
-    /* Estilo para el botón cuando está activo */
-    .custom-btn2:hover {
-      background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
-      border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
-    }
-
-    /* Estilo para el botón cuando está desactivado */
-    .custom-btn.disabled,
-    .custom-btn:disabled {
-      background-color: #f9ed48; /* Cambia este valor al color que desees para el estado desactivado */
-      border-color: #fcec2d; /* Cambia este valor al color que desees para el estado desactivado */
-    }
-
-    .amarillo{
- 
-color: black;
-}
-
-.amarillo:hover{
-
-color: #e4d529;
-}
-    #amarillo{
-
-      color: black;
-    }
-
-    #amarillo:hover{
-
-color: #e4d529;
-}
-
-#amarillo2{
- color: #e4d529;
-}
-
-#amarillo3{
-color: black;
-background-color: #e4d529;
-}
-</style>
-
-   </head>
-
-   <body>
+<body>
       
 <div style="display: grid; position: fixed;top:33% ">
-   <img class="face" style=" width:10%;margin:2% 0% 0% -2%" src="images/face.png">     
-   <img class="insta" style=" width:10%;margin:2% 0% 0% -2%" src="images/insta.png">  
-   <img class="wsap" style=" width:10%;margin:2% 0% 0% -2%" src="images/wsap.png">  
+   <img class="face" style=" width:10%;margin:2% 0% 0% -2%" src="static/assets/face.png">
+   <img class="insta" style=" width:10%;margin:2% 0% 0% -2%" src="static/assets/insta.png">
+   <img class="wsap" style=" width:10%;margin:2% 0% 0% -2%" src="static/assets/wsap.png">
 </div>
 <div class="border-bottom">
 	 
@@ -258,11 +257,11 @@ background-color: #e4d529;
 			<div class="row w-100 align-items-center gx-lg-2 gx-0">
 				<div class="col-xxl-2 col-lg-3 col-md-6 col-5">
 					<a class="navbar-brand d-none d-lg-block" href="index-2.html">
-						<img class="logo" src="./images/logo.png?ver=2.0" alt="eCommerce HTML Template" />
+						<img class="logo" src="static/assets/logo.png?ver=2.0" alt="eCommerce HTML Template" />
 					</a>
 					<div class="d-flex justify-content-between w-100 d-lg-none">
 						<a class="navbar-brand" href="index-2.html">
-							<img class="logo" src="./images/logo.png?ver=2.0" alt="eCommerce HTML Template" />
+							<img class="logo" src="static/assets/logo.png?ver=2.0" alt="eCommerce HTML Template" />
 						</a>
 					</div>
 				</div>
@@ -303,7 +302,7 @@ background-color: #e4d529;
 				<div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7">
 					<div class="list-inline">
 						<div class="list-inline-item me-5">
-							<a href="pages/shop-wishlist.html" class="text-muted position-relative">
+							<a href="plantilla/temps/shop-wishlist.html" class="text-muted position-relative">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="20"
@@ -387,7 +386,7 @@ background-color: #e4d529;
 		<div class="container">
 			<div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default" aria-labelledby="navbar-defaultLabel">
 				<div class="offcanvas-header pb-1">
-					<a href="index-2.html"><img src="./images/logo.png" alt="eCommerce HTML Template" /></a>
+					<a href="index-2.html"><img src="static/assets/logo.png" alt="eCommerce HTML Template" /></a>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
@@ -458,19 +457,19 @@ background-color: #e4d529;
 						<div class="collapse mt-2" id="collapseExample">
 							<div class="card card-body">
 							<ul class="mb-0 list-unstyled">
-							<li><a class="dropdown-item" href="pages/shop-grid.html"><img src="../images/peludos.png">Para los peludos</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html">Para ti</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html">Para tu mesa</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html">Inmobiliaria & Automotriz</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html">Para Disfrutar</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html">Para Divertirte</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html">Para los Gobernantes</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html">Para Quien Amas</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img src=".static/assets/peludos.png">Para los peludos</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para ti</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para tu mesa</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Inmobiliaria & Automotriz</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para Disfrutar</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para Divertirte</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para los Gobernantes</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para Quien Amas</a></li>
 
-                     <li><a class="dropdown-item" href="pages/shop-grid.html">Para Tu Bienestar</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para Tu Bienestar</a></li>
 
-                     <li><a class="dropdown-item" href="pages/shop-grid.html">Para Tu Hogar</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html">Servicios Profesionales</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Para Tu Hogar</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Servicios Profesionales</a></li>
 
 
 						</ul>
@@ -501,24 +500,24 @@ background-color: #e4d529;
 							Todas las categorias
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/peludos.png">Para los peludos</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/parati.png">Para ti</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paratumesa.png">Para tu mesa</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paratupaladar.png">Para tu paladar</a></li>
+                  <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/peludos.png">Para los peludos</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/parati.png">Para ti</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paratumesa.png">Para tu mesa</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paratupaladar.png">Para tu paladar</a></li>
 
-							<li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/inmobiliaria.png">Inmobiliaria & Automotriz</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paradisfrutar.png">Para Disfrutar</a></li>
-							<li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/gobernantes.png">Para los gobernantes</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paraquienamas.png">Para quien amas</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/inmobiliaria.png">Inmobiliaria & Automotriz</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paradisfrutar.png">Para Disfrutar</a></li>
+							<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/gobernantes.png">Para los gobernantes</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paraquienamas.png">Para quien amas</a></li>
 
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paratubienestar.png">Para tu bienestar</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paratumente.png">Para tu mente</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paratubienestar.png">Para tu bienestar</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paratumente.png">Para tu mente</a></li>
 
 
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/paratuhogar.png">Para tu hogar</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/serviciosprfesionales.png">Servicios Profesionales</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/tecnologia.png">Tecnología</a></li>
-                     <li><a class="dropdown-item" href="pages/shop-grid.html"><img class="icono" src="./images/recilaygana.png">Recicla y gana</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/paratuhogar.png">Para tu hogar</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/serviciosprfesionales.png">Servicios Profesionales</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/tecnologia.png">Tecnología</a></li>
+                     <li><a class="dropdown-item" href="plantilla/temps/shop-grid.html"><img class="icono" src="static/assets/recilaygana.png">Recicla y gana</a></li>
 
 
 						</ul>
@@ -528,36 +527,36 @@ background-color: #e4d529;
 							<li class="nav-item dropdown w-100 w-lg-auto">
 								<a class="nav-link dropdown-toggle" id="amarillo"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="index-2.html">Home 1</a></li>
-									<li><a class="dropdown-item" href="pages/index-2.html">Home 2</a></li>
-									<li><a class="dropdown-item" href="pages/index-3.html">Home 3</a></li>
-									<li><a class="dropdown-item" href="pages/index-4.html">Home 4</a></li>
+									<li><a class="dropdown-item" href="plantilla/index-2.html">Home 1</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/index-2.html">Home 2</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/index-3.html">Home 3</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/index-4.html">Home 4</a></li>
 									<li>
-										<a class="dropdown-item" href="pages/index-5.html">Home 5</a>
+										<a class="dropdown-item" href="plantilla/temps/index-5.html">Home 5</a>
 									</li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto">
 								<a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="pages/shop-grid.html">Shop Grid - Filter</a></li>
-									<li><a class="dropdown-item" href="pages/shop-grid-3-column.html">Shop Grid - 3 column</a></li>
-									<li><a class="dropdown-item" href="pages/shop-list.html">Shop List - Filter</a></li>
-									<li><a class="dropdown-item" href="pages/shop-filter.html">Shop - Filter</a></li>
-									<li><a class="dropdown-item" href="pages/shop-fullwidth.html">Shop Wide</a></li>
-									<li><a class="dropdown-item" href="pages/shop-single.html">Shop Single</a></li>
-									<li><a class="dropdown-item" href="pages/shop-single-2.html">Shop Single v2</a></li>
-									<li><a class="dropdown-item" href="pages/shop-wishlist.html">Shop Wishlist</a></li>
-									<li><a class="dropdown-item" href="pages/shop-cart.html">Shop Cart</a></li>
-									<li><a class="dropdown-item" href="pages/shop-checkout.html">Shop Checkout</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-grid.html">Shop Grid - Filter</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-grid-3-column.html">Shop Grid - 3 column</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-list.html">Shop List - Filter</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-filter.html">Shop - Filter</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-fullwidth.html">Shop Wide</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-single.html">Shop Single</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-single-2.html">Shop Single v2</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-wishlist.html">Shop Wishlist</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-cart.html">Shop Cart</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/shop-checkout.html">Shop Checkout</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto">
 								<a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo" data-bs-toggle="dropdown" aria-expanded="false">Stores</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="pages/store-list.html">Store List</a></li>
-									<li><a class="dropdown-item" href="pages/store-grid.html">Store Grid</a></li>
-									<li><a class="dropdown-item" href="pages/store-single.html">Store Single</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/store-list.html">Store List</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/store-grid.html">Store Grid</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/store-single.html">Store Single</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto dropdown-fullwidth">
@@ -566,40 +565,40 @@ background-color: #e4d529;
 									<div class="row p-2 p-lg-4">
 										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<h6 class="  ps-3" id="amarillo2" >Dairy, Bread & Eggs</h6>
-											<a class="dropdown-item" href="pages/shop-grid.html">Butter</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Milk Drinks</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Curd & Yogurt</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Eggs</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Buns & Bakery</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Cheese</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Condensed Milk</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Dairy Products</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Butter</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Milk Drinks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Curd & Yogurt</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Eggs</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Buns & Bakery</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Cheese</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Condensed Milk</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Dairy Products</a>
 										</div>
 										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<h6 class=" ps-3" id="amarillo2" >Breakfast & Instant Food</h6>
-											<a class="dropdown-item" href="pages/shop-grid.html">Breakfast Cereal</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Noodles, Pasta & Soup</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Frozen Veg Snacks</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Frozen Non-Veg Snacks</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Vermicelli</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Instant Mixes</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Batter</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Fruit and Juices</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Breakfast Cereal</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Noodles, Pasta & Soup</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Frozen Veg Snacks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Frozen Non-Veg Snacks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Vermicelli</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Instant Mixes</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Batter</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Fruit and Juices</a>
 										</div>
 										<div  class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<h6  class=" ps-3" id="amarillo2" >Cold Drinks & Juices</h6>
-											<a class="dropdown-item" href="pages/shop-grid.html">Soft Drinks</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Fruit Juices</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Coldpress</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Water & Ice Cubes</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Soda & Mixers</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Health Drinks</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Herbal Drinks</a>
-											<a class="dropdown-item" href="pages/shop-grid.html">Milk Drinks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Soft Drinks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Fruit Juices</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Coldpress</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Water & Ice Cubes</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Soda & Mixers</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Health Drinks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Herbal Drinks</a>
+											<a class="dropdown-item" href="plantilla/temps/shop-grid.html">Milk Drinks</a>
 										</div>
 										<div class="col-lg-3 col-12 mb-4 mb-lg-0">
 											<div class="card border-0">
-												<img src="assets/images/banner/menu-banner.jpg" alt="eCommerce HTML Template" class="img-fluid" />
+												<img src="plantilla/assets/images/banner/menu-banner.jpg" alt="eCommerce HTML Template" class="img-fluid" />
 												<div class="position-absolute ps-6 mt-8">
 													<h5 class="mb-0">
 														Dont miss this
@@ -614,36 +613,36 @@ background-color: #e4d529;
 								</div>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto">
-								<a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+								<a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo" data-bs-toggle="dropdown" aria-expanded="false">plantilla/temps</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="pages/blog.html">Blog</a></li>
-									<li><a class="dropdown-item" href="pages/blog-single.html">Blog Single</a></li>
-									<li><a class="dropdown-item" href="pages/blog-category.html">Blog Category</a></li>
-									<li><a class="dropdown-item" href="pages/about.html">About us</a></li>
-									<li><a class="dropdown-item" href="pages/404error.html">404 Error</a></li>
-									<li><a class="dropdown-item" href="pages/contact.html">Contact</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/blog.html">Blog</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/blog-single.html">Blog Single</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/blog-category.html">Blog Category</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/about.html">About us</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/404error.html">404 Error</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/contact.html">Contact</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto">
 								<a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo"  data-bs-toggle="dropdown" aria-expanded="false">Account</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="pages/signin.html">Sign in</a></li>
-									<li><a class="dropdown-item" href="pages/signup.html">Signup</a></li>
-									<li><a class="dropdown-item" href="pages/forgot-password.html">Forgot Password</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/signin.html">Sign in</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/signup.html">Signup</a></li>
+									<li><a class="dropdown-item" href="plantilla/temps/forgot-password.html">Forgot Password</a></li>
 									<li class="dropdown-submenu dropend">
 										<a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">My Account</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="pages/account-orders.html">Orders</a></li>
-											<li><a class="dropdown-item" href="pages/account-settings.html">Settings</a></li>
-											<li><a class="dropdown-item" href="pages/account-address.html">Address</a></li>
-											<li><a class="dropdown-item" href="pages/account-payment-method.html">Payment Method</a></li>
-											<li><a class="dropdown-item" href="pages/account-notification.html">Notification</a></li>
+											<li><a class="dropdown-item" href="plantilla/temps/account-orders.html">Orders</a></li>
+											<li><a class="dropdown-item" href="plantilla/temps/account-settings.html">Settings</a></li>
+											<li><a class="dropdown-item" href="plantilla/temps/account-address.html">Address</a></li>
+											<li><a class="dropdown-item" href="plantilla/temps/account-payment-method.html">Payment Method</a></li>
+											<li><a class="dropdown-item" href="plantilla/temps/account-notification.html">Notification</a></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li class="nav-item w-100 w-lg-auto">
-								<a class="nav-link"id="amarillo"  href="dashboard/index.html">Dashboard</a>
+								<a class="nav-link"id="amarillo"  href="plantilla/temps/dashboard/index.html">Dashboard</a>
 							</li>
                      <li class="nav-item w-100 w-lg-auto">
 								<a class="nav-link"id="amarillo"  href=" "></a>
@@ -707,7 +706,7 @@ background-color: #e4d529;
                <div class="row">
                   <div class="col-12 col-md-6 mb-3 mb-lg-0">
                      <div>
-                        <div class="py-10 px-8 rounded" style="background: url(assets/images/banner/grocery-banner.png) no-repeat; background-size: cover; background-position: center">
+                        <div class="py-10 px-8 rounded" style="background: url(plantilla/assets/images/banner/grocery-banner.png) no-repeat; background-size: cover; background-position: center">
                            <div>
                               <h3 class="fw-bold mb-1">Fruits & Vegetables</h3>
                               <p class="mb-4">
@@ -722,7 +721,7 @@ background-color: #e4d529;
                   </div>
                   <div class="col-12 col-md-6">
                      <div>
-                        <div class="py-10 px-8 rounded" style="background: url(assets/images/banner/grocery-banner-2.jpg) no-repeat; background-size: cover; background-position: center">
+                        <div class="py-10 px-8 rounded" style="background: url(plantilla/assets/images/banner/grocery-banner-2.jpg) no-repeat; background-size: cover; background-position: center">
                            <div>
                               <h3 class="fw-bold mb-1">Freshly Baked Buns</h3>
                               <p class="mb-4">
@@ -787,7 +786,7 @@ background-color: #e4d529;
                                        role="tab"
                                        aria-controls="para-los-peludos"
                                        aria-selected="true">
-                                       <img class="icono" src="./images/peludos.png">
+                                       <img class="icono" src="static/assets/peludos.png">
                                        Para los peludos
                                     </a>
                                  </li>
@@ -796,7 +795,7 @@ background-color: #e4d529;
                                  <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:97px; display:flex;    align-items: center; "
- href="#"  class="nav-link" id="nav-para-tu-mesa" data-bs-toggle="tab" data-bs-target="#para-tu-mesa" role="tab" aria-controls="para-tu-mesa" aria-selected="false"><img class="icono" src="./images/paratumesa.png">Para tu mesa
+ href="#"  class="nav-link" id="nav-para-tu-mesa" data-bs-toggle="tab" data-bs-target="#para-tu-mesa" role="tab" aria-controls="para-tu-mesa" aria-selected="false"><img class="icono" src="static/assets/paratumesa.png">Para tu mesa
                                     </a>
 
                                  </li>
@@ -805,7 +804,7 @@ background-color: #e4d529;
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:95px; display:flex;    align-items: center; "
  href="#" class="nav-link" id="nav-tea-tab" data-bs-toggle="tab" data-bs-target="#nav-tea" role="tab" aria-controls="nav-tea" aria-selected="false">
- <img class="icono" src="./images/paratupaladar.png">Para tu paladar
+ <img class="icono" src="static/assets/paratupaladar.png">Para tu paladar
                                     </a>
 
                                  </li>
@@ -813,7 +812,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:115px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/inmobiliaria.png">Inmobiliaria Automotriz
+                                    <img class="icono" src="static/assets/inmobiliaria.png">Inmobiliaria Automotriz
                                     </a>
 
                                  </li>
@@ -822,7 +821,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:100px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/paradisfrutar.png">Para Disfrutar
+                                    <img class="icono" src="static/assets/paradisfrutar.png">Para Disfrutar
                                     </a>
 
                                  </li>
@@ -831,7 +830,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:120px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/gobernantes.png">Para Los Gobernantes
+                                    <img class="icono" src="static/assets/gobernantes.png">Para Los Gobernantes
                                     </a>
 
                                  </li>
@@ -841,7 +840,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:116px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/paraquienamas.png">Para Quien Amas
+                                    <img class="icono" src="static/assets/paraquienamas.png">Para Quien Amas
                                     </a>
 
                                  </li>
@@ -850,7 +849,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:105px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/paratubienestar.png">Para Tu Bienestar
+                                    <img class="icono" src="static/assets/paratubienestar.png">Para Tu Bienestar
                                     </a>
 
                                  </li>
@@ -859,7 +858,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/paratumente.png">Para Tu Mente
+                                    <img class="icono" src="static/assets/paratumente.png">Para Tu Mente
                                     </a>
 
                                  </li>
@@ -868,7 +867,7 @@ background-color: #e4d529;
                                      <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/paratuhogar.png">Para Tu Hogar
+                                    <img class="icono" src="static/assets/paratuhogar.png">Para Tu Hogar
                                     </a>
 
                                  </li>
@@ -877,7 +876,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:122px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/serviciosprfesionales.png">Servicios Profesionales
+                                    <img class="icono" src="static/assets/serviciosprfesionales.png">Servicios Profesionales
                                     </a>
 
                                  </li>
@@ -887,7 +886,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/recilaygana.png">Recicla Y Gana
+                                    <img class="icono" src="static/assets/recilaygana.png">Recicla Y Gana
                                     </a>
 
                                  </li>
@@ -896,7 +895,7 @@ background-color: #e4d529;
                                    <li style="display:flex;  align-items: center; "  class="nav-item">
                                     <!-- nav link -->
                                     <a style="font-size:75%; width:110px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="./images/tecnologia.png">Tecnología
+                                    <img class="icono" src="static/assets/tecnologia.png">Tecnología
                                     </a>
 
                                  </li>
@@ -917,7 +916,7 @@ background-color: #e4d529;
                                        role="tab"
                                        aria-controls="mascotas-mas"
                                        aria-selected="false">
-                                       <img class="icono" src="./images/parati.png">
+                                       <img class="icono" src="static/assets/parati.png">
                                        Para tí
              
                                     </a>
@@ -960,11 +959,11 @@ background-color: #e4d529;
                                              <span class="badge bg-warning text-dark">14%</span>
                                           </div>
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1007,11 +1006,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1051,11 +1050,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1098,11 +1097,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1149,11 +1148,11 @@ background-color: #e4d529;
                                              <span class="badge bg-danger">Sale</span>
                                           </div>
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1196,11 +1195,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1240,11 +1239,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1284,11 +1283,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1335,11 +1334,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1385,11 +1384,11 @@ background-color: #e4d529;
                                              <span class="badge bg-warning text-dark">14%</span>
                                           </div>
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1432,11 +1431,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1479,11 +1478,11 @@ background-color: #e4d529;
                                              <span class="badge bg-danger">Sale</span>
                                           </div>
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1526,11 +1525,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1570,11 +1569,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1615,11 +1614,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1662,11 +1661,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1713,11 +1712,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1763,11 +1762,11 @@ background-color: #e4d529;
                                              <span class="badge bg-warning text-dark">14%</span>
                                           </div>
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1810,11 +1809,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1857,11 +1856,11 @@ background-color: #e4d529;
                                              <span class="badge bg-danger">Sale</span>
                                           </div>
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1904,11 +1903,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1948,11 +1947,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -1992,11 +1991,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -2039,11 +2038,11 @@ background-color: #e4d529;
                                        <!-- badge -->
                                        <div class="text-center position-relative">
                                           <!-- img -->
-                                          <a href="#!"><img src="../assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                          <a href="#!"><img src="plantilla/assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                           <!-- action btn -->
                                           <div class="product-action-btn">
                                              <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
-                                             <a href="shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                             <a href="plantilla/temps/shop-wishlist.html" class="btn-action mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                              <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                                           </div>
                                        </div>
@@ -2380,10 +2379,10 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
 					<div class="row align-items-center">
 						<div class="col-6 col-md-6 col-lg-7">
 							<div class="d-flex">
-								<img src="assets/images/products/product-img-1.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
+								<img src="plantilla/assets/images/products/product-img-1.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
 								<div class="ms-3">
 									<!-- title -->
-									<a href="pages/shop-single.html" class="text-inherit">
+									<a href="plantilla/temps/shop-single.html" class="text-inherit">
 										<h6 class="mb-0">Haldiram's Sev Bhujia</h6>
 									</a>
 									<span><small class="text-muted">.98 / lb</small></span>
@@ -2437,9 +2436,9 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
 					<div class="row align-items-center">
 						<div class="col-6 col-md-6 col-lg-7">
 							<div class="d-flex">
-								<img src="assets/images/products/product-img-2.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
+								<img src="plantilla/assets/images/products/product-img-2.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
 								<div class="ms-3">
-									<a href="pages/shop-single.html" class="text-inherit">
+									<a href="plantilla/temps/shop-single.html" class="text-inherit">
 										<h6 class="mb-0">NutriChoice Digestive</h6>
 									</a>
 									<span><small class="text-muted">250g</small></span>
@@ -2495,10 +2494,10 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
 					<div class="row align-items-center">
 						<div class="col-6 col-md-6 col-lg-7">
 							<div class="d-flex">
-								<img src="assets/images/products/product-img-3.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
+								<img src="plantilla/assets/images/products/product-img-3.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
 								<div class="ms-3">
 									<!-- title -->
-									<a href="pages/shop-single.html" class="text-inherit">
+									<a href="plantilla/temps/shop-single.html" class="text-inherit">
 										<h6 class="mb-0">Cadbury 5 Star Chocolate</h6>
 									</a>
 									<span><small class="text-muted">1 kg</small></span>
@@ -2554,11 +2553,11 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
 					<div class="row align-items-center">
 						<div class="col-6 col-md-6 col-lg-7">
 							<div class="d-flex">
-								<img src="assets/images/products/product-img-4.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
+								<img src="plantilla/assets/images/products/product-img-4.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
 								<div class="ms-3">
 									<!-- title -->
 									<!-- title -->
-									<a href="pages/shop-single.html" class="text-inherit">
+									<a href="plantilla/temps/shop-single.html" class="text-inherit">
 										<h6 class="mb-0">Onion Flavour Potato</h6>
 									</a>
 									<span><small class="text-muted">250g</small></span>
@@ -2614,10 +2613,10 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
 					<div class="row align-items-center">
 						<div class="col-6 col-md-6 col-lg-7">
 							<div class="d-flex">
-								<img src="assets/images/products/product-img-5.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
+								<img src="plantilla/assets/images/products/product-img-5.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
 								<div class="ms-3">
 									<!-- title -->
-									<a href="pages/shop-single.html" class="text-inherit">
+									<a href="plantilla/temps/shop-single.html" class="text-inherit">
 										<h6 class="mb-0">Salted Instant Popcorn</h6>
 									</a>
 									<span><small class="text-muted">100g</small></span>
@@ -2753,7 +2752,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
          <section class="mt-8">
             <div class="container">
                <div class="hero-slider">
-                  <div style="background: url(assets/images/slider/slide-1.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+                  <div style="background: url(plantilla/assets/images/slider/slide-1.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
                      <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
                         <span class="badge text-bg-warning">Opening Sale Discount 50%</span>
 
@@ -2765,7 +2764,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                         </a>
                      </div>
                   </div>
-                  <div style="background: url(assets/images/slider/slider-2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+                  <div style="background: url(plantilla/assets/images/slider/slider-2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
                      <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
                         <span class="badge text-bg-warning">Free Shipping - orders over $100</span>
                         <h2 class="text-dark display-5 fw-bold mt-4">
@@ -2793,7 +2792,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   <div class="table-responsive-xl pb-6 pb-xl-0">
                      <div class="row flex-nowrap">
                         <div class="col-12 col-xl-4 col-lg-6">
-                           <div class="p-8 mb-3 rounded" style="background: url(./assets/images/banner/ad-banner-1.jpg) no-repeat; background-size: cover">
+                           <div class="p-8 mb-3 rounded" style="background: url(plantilla/assets/images/banner/ad-banner-1.jpg) no-repeat; background-size: cover">
                               <div>
                                  <h3 class="mb-0 fw-bold">
                                     10% cashback on
@@ -2812,7 +2811,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                            </div>
                         </div>
                         <div class="col-12 col-xl-4 col-lg-6">
-                           <div class="p-8 mb-3 rounded" style="background: url(./assets/images/banner/ad-banner-2.jpg) no-repeat; background-size: cover">
+                           <div class="p-8 mb-3 rounded" style="background: url(plantilla/assets/images/banner/ad-banner-2.jpg) no-repeat; background-size: cover">
                               <!-- Banner Content -->
                               <div>
                                  <!-- Banner Content -->
@@ -2834,7 +2833,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                            </div>
                         </div>
                         <div class="col-12 col-xl-4 col-lg-6">
-                           <div class="p-8 mb-3 rounded" style="background: url(./assets/images/banner/ad-banner-3.jpg) no-repeat; background-size: cover">
+                           <div class="p-8 mb-3 rounded" style="background: url(plantilla/assets/images/banner/ad-banner-3.jpg) no-repeat; background-size: cover">
                               <div>
                                  <!-- Banner Content -->
                                  <h3 class="fw-bold mb-3">
@@ -2866,7 +2865,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="col-xxl-8 col-xl-7">
                         <!-- hero slider -->
                         <div class="hero-slider">
-                           <div style="background: url(./assets/images/slider/slider-image-1.jpg) no-repeat; background-size: cover; border-radius: 0.5rem">
+                           <div style="background: url(plantilla/assets/images/slider/slider-image-1.jpg) no-repeat; background-size: cover; border-radius: 0.5rem">
                               <div class="ps-lg-12 py-lg-16 col-xxl-7 col-lg-9 py-14 px-8 text-xs-center">
                                  <!-- badge -->
                                  <div class="d-flex align-items-center mb-4">
@@ -2891,7 +2890,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               </div>
                            </div>
                            <!-- img -->
-                           <div style="background: url(./assets/images/slider/slider-image-2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem">
+                           <div style="background: url(plantilla/assets/images/slider/slider-image-2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem">
                               <div class="ps-lg-12 py-lg-16 col-xxl-7 col-lg-9 py-14 ps-8 text-xs-center">
                                  <!-- badge -->
                                  <div class="d-flex align-items-center mb-4">
@@ -2917,7 +2916,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               </div>
                            </div>
                            <!-- img -->
-                           <div style="background: url(./assets/images/slider/slider-image-3.jpg) no-repeat; background-size: cover; border-radius: 0.5rem">
+                           <div style="background: url(plantilla/assets/images/slider/slider-image-3.jpg) no-repeat; background-size: cover; border-radius: 0.5rem">
                               <div class="ps-lg-12 py-lg-16 col-xxl-7 col-lg-9 py-14 ps-8 text-xs-center">
                                  <!-- badge -->
                                  <div class="d-flex align-items-center mb-4">
@@ -2964,7 +2963,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <a href="#" class="btn btn-dark">Shop Now</a>
                            </div>
                         </div>
-                        <div class="flex-fill px-8 py-9 mb-6 rounded" style="background: url(./assets/images/banner/ad-banner-1.jpg) no-repeat; background-size: cover">
+                        <div class="flex-fill px-8 py-9 mb-6 rounded" style="background: url(plantilla/assets/images/banner/ad-banner-1.jpg) no-repeat; background-size: cover">
                            <div>
                               <h3 class="mb-0 fw-bold">
                                  10% cashback on
@@ -3017,60 +3016,60 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                </div>
                <div class="category-slider">
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-dairy-bread-eggs.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" />
+                              <img src="plantilla/assets/images/category/category-dairy-bread-eggs.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" />
                               <div class="text-truncate">Dairy, Bread & Eggs</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-snack-munchies.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-snack-munchies.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Snack & Munchies</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-bakery-biscuits.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-bakery-biscuits.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Bakery & Biscuits</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-instant-food.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-instant-food.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Instant Food</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-tea-coffee-drinks.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-tea-coffee-drinks.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Tea, Coffee & Drinks</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-atta-rice-dal.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-atta-rice-dal.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Atta, Rice & Dal</div>
                            </div>
                         </div>
@@ -3078,40 +3077,40 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   </div>
 
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-baby-care.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-baby-care.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Baby Care</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-chicken-meat-fish.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-chicken-meat-fish.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Chicken, Meat & Fish</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-cleaning-essentials.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-cleaning-essentials.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Cleaning Essentials</div>
                            </div>
                         </div>
                      </a>
                   </div>
                   <div class="item">
-                     <a href="pages/shop-grid.html" class="text-decoration-none text-inherit">
+                     <a href="plantilla/temps/shop-grid.html" class="text-decoration-none text-inherit">
                         <div class="card card-product mb-lg-4">
                            <div class="card-body text-center py-8">
-                              <img src="assets/images/category/category-pet-care.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
+                              <img src="plantilla/assets/images/category/category-pet-care.jpg" alt="Grocery Ecommerce Template" class="mb-3" />
                               <div class="text-truncate">Pet Care</div>
                            </div>
                         </div>
@@ -3174,7 +3173,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <div class="position-absolute top-0 start-0">
                                  <span class="badge bg-danger">Sale</span>
                               </div>
-                              <a href="#!"><img src="assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="#!"><img src="plantilla/assets/images/products/product-img-1.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
 
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -3187,7 +3186,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Snack & Munchies</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Haldiram's Sev Bhujia</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Haldiram's Sev Bhujia</a></h2>
                            <div>
                               <small class="text-warning">
                                  <i class="bi bi-star-fill"></i>
@@ -3233,19 +3232,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <div class="position-absolute top-0 start-0">
                                  <span class="badge bg-success">14%</span>
                               </div>
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-2.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Bakery & Biscuits</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">NutriChoice Digestive</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">NutriChoice Digestive</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3285,19 +3284,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-3.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Bakery & Biscuits</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Cadbury 5 Star Chocolate</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Cadbury 5 Star Chocolate</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3340,12 +3339,12 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-4.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                               <div class="position-absolute top-0 start-0">
@@ -3355,7 +3354,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Snack & Munchies</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Onion Flavour Potato</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Onion Flavour Potato</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3398,19 +3397,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-5.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Instant Food</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Salted Instant Popcorn</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Salted Instant Popcorn</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3456,19 +3455,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <div class="position-absolute top-0 start-0">
                                  <span class="badge bg-danger">Sale</span>
                               </div>
-                              <a href="#!"><img src="assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="#!"><img src="plantilla/assets/images/products/product-img-6.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Dairy, Bread & Eggs</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Blueberry Greek Yogurt</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Blueberry Greek Yogurt</a></h2>
                            <div>
                               <small class="text-warning">
                                  <i class="bi bi-star-fill"></i>
@@ -3511,19 +3510,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-7.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-7.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Dairy, Bread & Eggs</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Britannia Cheese Slices</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Britannia Cheese Slices</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3563,19 +3562,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-8.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Instant Food</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Kellogg's Original Cereals</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Kellogg's Original Cereals</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3618,19 +3617,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-9.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Snack & Munchies</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Slurrp Millet Chocolate</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Slurrp Millet Chocolate</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3673,19 +3672,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                      <div class="card card-product">
                         <div class="card-body">
                            <div class="text-center position-relative">
-                              <a href="pages/shop-single.html"><img src="assets/images/products/product-img-10.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                              <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-10.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                               <div class="card-product-action">
                                  <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
                                  </a>
-                                 <a href="pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                 <a href="plantilla/temps/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Wishlist"><i class="bi bi-heart"></i></a>
                                  <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Compare"><i class="bi bi-arrow-left-right"></i></a>
                               </div>
                            </div>
                            <div class="text-small mb-1">
                               <a href="#!" class="text-decoration-none text-muted"><small>Dairy, Bread & Eggs</small></a>
                            </div>
-                           <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Amul Butter - 500 g</a></h2>
+                           <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Amul Butter - 500 g</a></h2>
                            <div class="text-warning">
                               <small>
                                  <i class="bi bi-star-fill"></i>
@@ -3738,7 +3737,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                <div class="table-responsive-xl pb-6">
                   <div class="row row-cols-lg-4 row-cols-1 row-cols-md-2 g-4 flex-nowrap">
                      <div class="col">
-                        <div class="pt-8 px-6 px-xl-8 rounded" style="background: url(assets/images/banner/banner-deal.jpg) no-repeat; background-size: cover; height: 470px">
+                        <div class="pt-8 px-6 px-xl-8 rounded" style="background: url(plantilla/assets/images/banner/banner-deal.jpg) no-repeat; background-size: cover; height: 470px">
                            <div>
                               <h3 class="fw-bold text-white">100% Organic Coffee Beans.</h3>
                               <p class="text-white">Get the best deal before close.</p>
@@ -3753,7 +3752,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                         <div class="card card-product">
                            <div class="card-body">
                               <div class="text-center position-relative">
-                                 <a href="pages/shop-single.html"><img src="assets/images/products/product-img-11.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                 <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-11.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
 
                                  <div class="card-product-action">
                                     <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -3766,7 +3765,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <div class="text-small mb-1">
                                  <a href="#!" class="text-decoration-none text-muted"><small>Tea, Coffee & Drinks</small></a>
                               </div>
-                              <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Roast Ground Coffee</a></h2>
+                              <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Roast Ground Coffee</a></h2>
 
                               <div class="d-flex justify-content-between align-items-center mt-3">
                                  <div>
@@ -3813,7 +3812,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                         <div class="card card-product">
                            <div class="card-body">
                               <div class="text-center position-relative">
-                                 <a href="pages/shop-single.html"><img src="assets/images/products/product-img-12.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                 <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-12.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                  <div class="card-product-action">
                                     <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                        <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
@@ -3825,7 +3824,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <div class="text-small mb-1">
                                  <a href="#!" class="text-decoration-none text-muted"><small>Fruits & Vegetables</small></a>
                               </div>
-                              <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Crushed Tomatoes</a></h2>
+                              <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Crushed Tomatoes</a></h2>
                               <div class="d-flex justify-content-between align-items-center mt-3">
                                  <div>
                                     <span class="text-dark">$13</span>
@@ -3871,7 +3870,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                         <div class="card card-product">
                            <div class="card-body">
                               <div class="text-center position-relative">
-                                 <a href="pages/shop-single.html"><img src="assets/images/products/product-img-13.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
+                                 <a href="plantilla/temps/shop-single.html"><img src="plantilla/assets/images/products/product-img-13.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid" /></a>
                                  <div class="card-product-action">
                                     <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                        <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
@@ -3883,7 +3882,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                               <div class="text-small mb-1">
                                  <a href="#!" class="text-decoration-none text-muted"><small>Fruits & Vegetables</small></a>
                               </div>
-                              <h2 class="fs-6"><a href="pages/shop-single.html" class="text-inherit text-decoration-none">Golden Pineapple</a></h2>
+                              <h2 class="fs-6"><a href="plantilla/temps/shop-single.html" class="text-inherit text-decoration-none">Golden Pineapple</a></h2>
                               <div class="d-flex justify-content-between align-items-center mt-3">
                                  <div>
                                     <span class="text-dark">$13</span>
@@ -3934,28 +3933,28 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                <div class="row">
                   <div class="col-md-6 col-lg-3">
                      <div class="mb-8 mb-xl-0">
-                        <div class="mb-6"><img src="assets/images/icons/clock.svg" alt="" /></div>
+                        <div class="mb-6"><img src="plantilla/assets/images/icons/clock.svg" alt="" /></div>
                         <h3 class="h5 mb-3">10 minute grocery now</h3>
                         <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
                      <div class="mb-8 mb-xl-0">
-                        <div class="mb-6"><img src="assets/images/icons/gift.svg" alt="" /></div>
+                        <div class="mb-6"><img src="plantilla/assets/images/icons/gift.svg" alt="" /></div>
                         <h3 class="h5 mb-3">Best Prices & Offers</h3>
                         <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess & offers.</p>
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
                      <div class="mb-8 mb-xl-0">
-                        <div class="mb-6"><img src="assets/images/icons/package.svg" alt="" /></div>
+                        <div class="mb-6"><img src="plantilla/assets/images/icons/package.svg" alt="" /></div>
                         <h3 class="h5 mb-3">Wide Assortment</h3>
                         <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
                      <div class="mb-8 mb-xl-0">
-                        <div class="mb-6"><img src="assets/images/icons/refresh-cw.svg" alt="" /></div>
+                        <div class="mb-6"><img src="plantilla/assets/images/icons/refresh-cw.svg" alt="" /></div>
                         <h3 class="h5 mb-3">Easy Returns</h3>
                         <p>
                            Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked
@@ -3990,12 +3989,12 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                 class="zoom"
                 onmousemove="zoom(event)"
                 style="
-                  background-image: url(assets/images/products/product-single-img-1.jpg);
+                  background-image: url(plantilla/assets/images/products/product-single-img-1.jpg);
                 "
               >
                 <!-- img -->
                 <img
-                  src="assets/images/products/product-single-img-1.jpg"
+                  src="plantilla/assets/images/products/product-single-img-1.jpg"
                   alt=""
             >
               </div>
@@ -4004,12 +4003,12 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   class="zoom"
                   onmousemove="zoom(event)"
                   style="
-                    background-image: url(assets/images/products/product-single-img-2.jpg);
+                    background-image: url(plantilla/assets/images/products/product-single-img-2.jpg);
                   "
                 >
                   <!-- img -->
                   <img
-                    src="assets/images/products/product-single-img-2.jpg"
+                    src="plantilla/assets/images/products/product-single-img-2.jpg"
                     alt=""
               >
                 </div>
@@ -4019,12 +4018,12 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   class="zoom"
                   onmousemove="zoom(event)"
                   style="
-                    background-image: url(assets/images/products/product-single-img-3.jpg);
+                    background-image: url(plantilla/assets/images/products/product-single-img-3.jpg);
                   "
                 >
                   <!-- img -->
                   <img
-                    src="assets/images/products/product-single-img-3.jpg"
+                    src="plantilla/assets/images/products/product-single-img-3.jpg"
                     alt=""
               >
                 </div>
@@ -4034,12 +4033,12 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   class="zoom"
                   onmousemove="zoom(event)"
                   style="
-                    background-image: url(assets/images/products/product-single-img-4.jpg);
+                    background-image: url(plantilla/assets/images/products/product-single-img-4.jpg);
                   "
                 >
                   <!-- img -->
                   <img
-                    src="assets/images/products/product-single-img-4.jpg"
+                    src="plantilla/assets/images/products/product-single-img-4.jpg"
                     alt=""
               >
                 </div>
@@ -4052,7 +4051,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   <div class="thumbnails-img">
                     <!-- img -->
                     <img
-                      src="assets/images/products/product-single-img-1.jpg"
+                      src="plantilla/assets/images/products/product-single-img-1.jpg"
                       alt=""
                 >
                   </div>
@@ -4061,7 +4060,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   <div class="thumbnails-img" >
                     <!-- img -->
                     <img
-                      src="assets/images/products/product-single-img-2.jpg"
+                      src="plantilla/assets/images/products/product-single-img-2.jpg"
                       alt=""
                 >
                   </div>
@@ -4070,7 +4069,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   <div class="thumbnails-img">
                     <!-- img -->
                     <img
-                      src="assets/images/products/product-single-img-3.jpg"
+                      src="plantilla/assets/images/products/product-single-img-3.jpg"
                       alt=""
                 >
                   </div>
@@ -4079,7 +4078,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
                   <div class="thumbnails-img">
                     <!-- img -->
                     <img
-                      src="assets/images/products/product-single-img-4.jpg"
+                      src="plantilla/assets/images/products/product-single-img-4.jpg"
                       alt=""
                 >
                   </div>
@@ -4254,7 +4253,7 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
               <li class="nav-item mb-2"><a href="#!" class="nav-link">Shipping</a></li>
               <li class="nav-item mb-2"><a href="#!" class="nav-link">Product Returns</a></li>
               <li class="nav-item mb-2"><a href="#!" class="nav-link">FAQ</a></li>
-              <li class="nav-item mb-2"><a href="pages/shop-checkout.html" class="nav-link">Shop Checkout</a></li>
+              <li class="nav-item mb-2"><a href="plantilla/temps/shop-checkout.html" class="nav-link">Shop Checkout</a></li>
             </ul>
           </div>
           <div class="col-6 col-sm-6 col-md-3">
@@ -4288,19 +4287,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
           <ul class="list-inline mb-0">
             <li class="list-inline-item text-dark">Payment Partners</li>
             <li class="list-inline-item">
-              <a href="#!"><img src="assets/images/payment/amazonpay.svg" alt=""></a>
+              <a href="#!"><img src="plantilla/assets/images/payment/amazonpay.svg" alt=""></a>
             </li>
             <li class="list-inline-item">
-              <a href="#!"><img src="assets/images/payment/american-express.svg" alt=""></a>
+              <a href="#!"><img src="plantilla/assets/images/payment/american-express.svg" alt=""></a>
             </li>
             <li class="list-inline-item">
-              <a href="#!"><img src="assets/images/payment/mastercard.svg" alt=""></a>
+              <a href="#!"><img src="plantilla/assets/images/payment/mastercard.svg" alt=""></a>
             </li>
             <li class="list-inline-item">
-              <a href="#!"><img src="assets/images/payment/paypal.svg" alt=""></a>
+              <a href="#!"><img src="plantilla/assets/images/payment/paypal.svg" alt=""></a>
             </li>
             <li class="list-inline-item">
-              <a href="#!"><img src="assets/images/payment/visa.svg" alt=""></a>
+              <a href="#!"><img src="plantilla/assets/images/payment/visa.svg" alt=""></a>
             </li>
           </ul>
         </div>
@@ -4308,10 +4307,10 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
           <ul class="list-inline mb-0 text-lg-end text-center">
             <li class="list-inline-item mb-2 mb-md-0 text-dark">Get deliveries with FreshCart</li>
             <li class="list-inline-item ms-4">
-              <a href="#!"> <img src="assets/images/appbutton/appstore-btn.svg" alt=""
+              <a href="#!"> <img src="plantilla/assets/images/appbutton/appstore-btn.svg" alt=""
                   style="width: 140px;"></a></li>
             <li class="list-inline-item">
-              <a href="#!"> <img src="assets/images/appbutton/googleplay-btn.svg" alt=""
+              <a href="#!"> <img src="plantilla/assets/images/appbutton/googleplay-btn.svg" alt=""
                   style="width: 140px;"></a></li>
           </ul>
         </div>
@@ -4356,19 +4355,19 @@ $filter = (isset($_GET['filter']) ? strtolower($_GET['filter']) : NULL);
 
       <!-- Libs JS -->
 <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
-<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="plantilla/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="plantilla/assets/libs/simplebar/dist/simplebar.min.js"></script>
 
 <!-- Theme JS -->
 <script src="assets/js/theme.min.js"></script>
 
-      <script src="assets/js/vendors/jquery.min.js"></script>
-      <script src="assets/js/vendors/countdown.js"></script>
-      <script src="assets/libs/slick-carousel/slick/slick.min.js"></script>
-      <script src="assets/js/vendors/slick-slider.js"></script>
-      <script src="assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
-      <script src="assets/js/vendors/tns-slider.js"></script>
-      <script src="assets/js/vendors/zoom.js"></script>
+      <script src="plantilla/assets/js/vendors/jquery.min.js"></script>
+      <script src="plantilla/assets/js/vendors/countdown.js"></script>
+      <script src="plantilla/assets/libs/slick-carousel/slick/slick.min.js"></script>
+      <script src="plantilla/assets/js/vendors/slick-slider.js"></script>
+      <script src="plantilla/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+      <script src="plantilla/assets/js/vendors/tns-slider.js"></script>
+      <script src="plantilla/assets/js/vendors/zoom.js"></script>
 
       <style>
 
