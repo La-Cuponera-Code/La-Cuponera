@@ -1,0 +1,212 @@
+/*#nav-fruitsandveg-tab:active{
+    background-color: ;
+ }*/
+ .icono{
+
+    width:22px;
+    margin-right:6%;
+ }
+.nav-pills .nav-link.active {
+ background-color: #fffdbe; /* Cambia este valor al color que desees para el estado desactivado */
+     border:1px solid #c3b722; /* Cambia este valor al color que desees */
+    color: #28292d;
+
+
+}
+.nav-pills .nav-link {
+    /*background-color:  ; /* Cambia este valor al color que desees para el estado desactivado */
+    border-color: #fcec2d;
+    color:black;
+}
+
+.yellower{
+ background-color: #f9ed48; /* Cambia este valor al color que desees para el estado desactivado */
+     border:1px solid #c3b722; /* Cambia este valor al color que desees */
+    color: #28292d;
+
+}
+
+.yellower:hover{
+ background-color: #e5d939; /* Cambia este valor al color que desees para el estado desactivado */
+     border:1px solid #c3b722; /* Cambia este valor al color que desees */
+    color: #28292d;
+
+}
+
+
+.fs-6{
+  
+}
+.fs-6:hover{
+color:#e5d939;
+ 
+}
+
+#btn-action{
+}
+
+#btn-action:hover{
+color:black;
+ background-color: #e5d939; /* Cambia este valor al color que desees para el estado desactivado */
+
+}
+
+
+
+
+.text-uppercase{
+
+ color:#c3b722;
+
+}
+.card{
+
+
+}
+.card:hover{
+
+ border:1px solid #c3b722;
+
+}
+
+#card{
+
+
+}
+
+#card.card:hover {
+ border:1px solid #c3b722 !important;
+
+  border-color: #c3b722 !important;
+}
+
+#card:hover{
+ border:1px solid #c3b722;
+
+
+}
+
+#card:end{
+
+border:1px solid #c3b722;
+
+}
+.face {
+animation-duration: 2s;
+animation-name: slidein;
+}
+
+.insta {
+animation-duration: 2.5s;
+animation-name: slidein;
+}
+
+.wsap {
+animation-duration: 3s;
+animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+  margin-left: -100%;
+ }
+
+to {
+  margin-left: -2%;
+ }
+}
+
+.logo{
+ width: 100%;
+ margin-left: -5%;
+}
+
+.alldepartaments{
+
+ background-color: red;
+}
+
+/* Define tu propio color personalizado */
+.custom-btn {
+    /*background-color: ; /* Cambia este valor al color que desees */
+    border-color: #f9ed48; /* Cambia este valor al color que desees */
+    color: #e4d529; /* Color del texto del botón */
+  }
+
+  .custom-btn:active {
+    background-color:red ; /* Cambia este valor al color que desees */
+    border-color: #f9ed48; /* Cambia este valor al color que desees */
+    color: #e4d529; /* Color del texto del botón */
+  }
+
+  /* Estilo para el botón cuando está activo */
+  .custom-btn:hover {
+    background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
+    border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
+  }
+
+
+  .custom-btn3 {
+    /*background-color: ; /* Cambia este valor al color que desees para el estado activo */
+    border-color: black; /* Cambia este valor al color que desees para el estado activo */
+  }
+
+  .custom-btn3:active{
+    /*background-color: ; /* Cambia este valor al color que desees */
+    border-color: #f9ed48; /* Cambia este valor al color que desees */
+    color: #e4d529; /* Color del texto del botón */
+  }
+
+  
+
+  /* Estilo para el botón cuando está activo */
+  .custom-btn3:hover {
+    background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
+    border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
+  }
+
+  .custom-btn2 {
+     border-color: #f9ed48; /* Cambia este valor al color que desees */
+    color: #e4d529; /* Color del texto del botón */
+  }
+
+  /* Estilo para el botón cuando está activo */
+  .custom-btn2:hover {
+    background-color: #f9ed48; /* Cambia este valor al color que desees para el estado activo */
+    border-color: #e2d326; /* Cambia este valor al color que desees para el estado activo */
+  }
+
+  /* Estilo para el botón cuando está desactivado */
+  .custom-btn.disabled,
+  .custom-btn:disabled {
+    background-color: #f9ed48; /* Cambia este valor al color que desees para el estado desactivado */
+    border-color: #fcec2d; /* Cambia este valor al color que desees para el estado desactivado */
+  }
+
+  .amarillo{
+
+color: black;
+}
+
+.amarillo:hover{
+
+color: #e4d529;
+}
+  #amarillo{
+
+    color: black;
+  }
+
+  #amarillo:hover{
+
+color: #e4d529;
+}
+
+#amarillo2{
+color: #e4d529;
+}
+
+#amarillo3{
+color: black;
+background-color: #e4d529;
+}
