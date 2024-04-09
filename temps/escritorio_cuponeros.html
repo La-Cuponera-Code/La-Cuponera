@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Codescandy" name="author">
     <title>Cuponeros</title>
 
-    <!-- <link rel="stylesheet" href="assets/css/theme.min.css"> -->
+    <link rel="stylesheet" href="../plantilla/assets/css/theme.min.css"> 
     <link rel="stylesheet" href="../static/css/escritorio_cuponeros.css">
 
     <link href="../plantilla/static/libs/slick-carousel/slick/slick.css" rel="stylesheet" />
     <link href="../plantilla/static/libs/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
     <link href="../plantilla/static/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="../plantilla/static/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
-    
     <link href="../plantilla/static/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
     <link href="../plantilla/static/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Favicon icon-->
     <link rel="shortcut icon" type="image/x-icon" href="../plantilla/static/assets/images/favicon/favicon.ico">
@@ -29,12 +31,13 @@
         <img class="wsap" style=" width:10%;margin:2% 0% 0% -2%" src="../static/assets/wsap.png">
     </div>
 
-    <div class="border-bottom">
+    <!-- navbar -->
+    <div class="border-bottom" id="barra">
         <div class="py-5">
             <div class="container">
                 <div class="row w-100 align-items-center gx-lg-2 gx-0">
                     <div class="col-xxl-2 col-lg-3 col-md-6 col-5">
-                        <a class="navbar-brand d-none d-lg-block" href="../plantilla/temps/index-2.html">
+                        <a class="navbar-brand d-none d-lg-block" href="index.html">
                             <img class="logo" src="../static/assets/logo.png?ver=2.0" alt="eCommerce HTML Template" />
                         </a>
                         <div class="d-flex justify-content-between w-100 d-lg-none">
@@ -73,8 +76,8 @@
 
                     <div class="col-md-2 col-xxl-3 d-none d-lg-block">
                         <!-- Button trigger modal -->
-                        <button  type="button" class="btn btn-outline-gray-400 text-muted" data-bs-toggle="modal" data-bs-target="#locationModal">
-                            <i class="feather-icon icon-map-pin me-2"></i>
+                        <button  type="button" class="btn btn-outline-gray-400 text-muted" id="icon-pin-button" data-bs-toggle="modal" data-bs-target="#locationModal">
+                            <i class="bi bi-geo-alt-fill icon-pin"></i>
                             <a id="ciudad" ></a>
                         </button>
                     </div>
@@ -89,7 +92,7 @@
                                         height="20"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="currentColor"
+                                        stroke="#e4d529"
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -98,8 +101,9 @@
                                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                                     </svg>
                                     <span  class="position-absolute top-0 start-100 translate-middle badge rounded-pill  " id="amarillo3"  >
-                                        5
+                                        <!-- logica para cantidad de productos likeados -->
                                         <span class="visually-hidden">unread messages</span>
+                                        0
                                     </span>
                                 </a>
                             </div>
@@ -111,7 +115,7 @@
                                         height="20"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="currentColor"
+                                        stroke="#e4d529"
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -130,7 +134,7 @@
                                         height="20"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="currentColor"
+                                        stroke="#e4d529"
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -141,6 +145,7 @@
                                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                                     </svg>
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill " id="amarillo3">
+                                        <!-- logica para cantidad de productos agregados al carrito -->
                                         1
                                         <span class="visually-hidden">unread messages</span>
                                     </span>
@@ -166,14 +171,14 @@
             <div class="container">
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default" aria-labelledby="navbar-defaultLabel">
                     <div class="offcanvas-header pb-1">
-                        <a href="../plantilla/temps/index-2.html"><img src="../static/assets/logo.png" alt="eCommerce HTML Template" /></a>
+                        <a href="../plantilla/temps/index-2.html"><img src="../static/assets/logo.png" alt="La Cuponera" /></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <div class="d-block d-lg-none mb-4">
                             <form action="#">
                                 <div class="input-group">
-                                    <input class="form-control rounded" type="search" placeholder="Search for products" />
+                                    <input class="form-control rounded" type="search" placeholder="Encontrá nuevos productos" />
                                     <span class="input-group-append">
                                         <button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end" type="button">
                                             <svg
@@ -196,9 +201,9 @@
                                 </div>
                             </form>
                             <div class="mt-2">
-                                <button type="button" class="btn btn-outline-gray-400 text-muted w-100" data-bs-toggle="modal" data-bs-target="#locationModal">
-                                    <i class="feather-icon icon-map-pin me-2"></i>
-                                    Pick Location
+                                <button type="button" class="btn btn-outline-gray-400 text-muted w-100" id="icon-pin" data-bs-toggle="modal" data-bs-target="#locationModal">
+                                    <i class="bi bi-geo-alt-fill icon-pin"></i>
+                                    Ubicación
                                 </button>
                             </div>
                         </div>
@@ -238,20 +243,769 @@
                             <div class="collapse mt-2" id="collapseExample">
                                 <div class="card card-body">
                                     <ul class="mb-0 list-unstyled">
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Dairy, Bread & Eggs</a></li>
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Snacks & Munchies</a></li>
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Fruits & Vegetables</a></li>
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Cold Drinks & Juices</a></li>
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Breakfast & Instant Food</a></li>
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Bakery & Biscuits</a></li>
-                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Chicken, Meat & Fish</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img src="../static/assets/peludos.png">Para los peludos</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para ti</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para tu mesa</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Inmobiliaria & Automotriz</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para Disfrutar</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para Divertirte</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para los Gobernantes</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para Quien Amas</a></li>
+
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para Tu Bienestar</a></li>
+
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Para Tu Hogar</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Servicios Profesionales</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="dropdown me-3 d-none d-lg-block">
+                            <button  class="btn custom-btn" class="alldepartaments" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                                <span class="me-1">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-grid"
+                                    >
+                                        <rect x="3" y="3" width="7" height="7"></rect>
+                                        <rect x="14" y="3" width="7" height="7"></rect>
+                                        <rect x="14" y="14" width="7" height="7"></rect>
+                                        <rect x="3" y="14" width="7" height="7"></rect>
+                                    </svg>
+                                </span>
+                                Todas las categorias
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/peludos.png">Para los peludos</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/parati.png">Para ti</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paratumesa.png">Para tu mesa</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paratupaladar.png">Para tu paladar</a></li>
+    
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/inmobiliaria.png">Inmobiliaria & Automotriz</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paradisfrutar.png">Para Disfrutar</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/gobernantes.png">Para los gobernantes</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paraquienamas.png">Para quien amas</a></li>
+    
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paratubienestar.png">Para tu bienestar</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paratumente.png">Para tu mente</a></li>
+    
+    
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/paratuhogar.png">Para tu hogar</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/serviciosprfesionales.png">Servicios Profesionales</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/tecnologia.png">Tecnología</a></li>
+                                <li><a class="dropdown-item" href="../plantilla/temps/shop-grid.html"><img class="icono" src="../static/assets/recilaygana.png">Recicla y gana</a></li>
+                            </ul>
+                        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+                        <div>
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item dropdown w-100 w-lg-auto">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo" data-bs-toggle="dropdown" aria-expanded="false">Stores</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../plantilla/temps/store-list.html">Store List</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/store-grid.html">Store Grid</a></li>
+                                        <li><a class="dropdown-item" href="../plantilla/temps/store-single.html">Store Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown w-100 w-lg-auto dropdown-fullwidth">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" id="amarillo" data-bs-toggle="dropdown" aria-expanded="false">Mega menu</a>
+                                    <div class="dropdown-menu pb-0">
+                                        <div class="row p-2 p-lg-4">
+                                            <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                                                <h6 class="  ps-3" id="amarillo2" >Dairy, Bread & Eggs</h6>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Butter</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Milk Drinks</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Curd & Yogurt</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Eggs</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Buns & Bakery</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Cheese</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Condensed Milk</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Dairy Products</a>
+                                            </div>
+                                            <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                                                <h6 class=" ps-3" id="amarillo2" >Breakfast & Instant Food</h6>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Breakfast Cereal</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Noodles, Pasta & Soup</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Frozen Veg Snacks</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Frozen Non-Veg Snacks</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Vermicelli</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Instant Mixes</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Batter</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Fruit and Juices</a>
+                                            </div>
+                                            <div  class="col-lg-3 col-12 mb-4 mb-lg-0">
+                                                <h6  class=" ps-3" id="amarillo2" >Cold Drinks & Juices</h6>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Soft Drinks</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Fruit Juices</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Coldpress</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Water & Ice Cubes</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Soda & Mixers</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Health Drinks</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Herbal Drinks</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Milk Drinks</a>
+                                            </div>
+                                            <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                                                <div class="card border-0">
+                                                    <img src="../plantilla/assets/images/banner/menu-banner.jpg" alt="eCommerce HTML Template" class="img-fluid" />
+                                                    <div class="position-absolute ps-6 mt-8">
+                                                        <h5 class="mb-0">
+                                                            Dont miss this
+                                                            <br />
+                                                            offer today.
+                                                        </h5>
+                                                        <a href="#" class="btn btn-primary btn-sm mt-3">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                        
+                                <li class="nav-item w-100 w-lg-auto">
+                                    <a class="nav-link"id="amarillo"  href="../plantilla/temps/dashboard/index.html">Dashboard</a>
+                                </li>
+                                <li class="nav-item dropdown w-100 w-lg-auto dropdown-flyout">
+                                    <a  href="#" id="navbarDropdownDocs"  class="amarillo" >Docs</a>
+    
+                                    <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdownDocs">
+                                        <a class="dropdown-item align-items-start" href="../plantilla/docs/index.html">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#e4d529" class="bi bi-file-text" viewBox="0 0 16 16">
+                                                    <path fill="#e4d529" d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
+                                                    <path fill="#e4d529" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                                </svg>
+                                            </div>
+                                            <div class="ms-3 lh-1">
+                                                <h6 class="mb-1">Documentations</h6>
+                                                <p class="mb-0 small">Browse the all documentation</p>
+                                            </div>
+                                        </a>
+                                     
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4" id="ventana-registro">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fs-3 fw-bold" id="userModalLabel">Registrate</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="fullName" placeholder="Nombre" required />
+                            <div class="invalid-feedback">Por favor, ingresá tu nombre</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="fullName" placeholder="Apellido" required />
+                            <div class="invalid-feedback">Por favor, ingresá tu apellido</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required />
+                            <div class="invalid-feedback">Por favor, ingresá tu mail</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña" required />
+                            <div class="invalid-feedback">Por favor, ingresá tu contraseña</div>
+                            <small class="form-text">
+                                Registrándote, estás de acuerdo con nuestros
+                                <a href="#!" id="lt-ventana-registro">Términos de Servicio</a>
+                                y
+                                <a href="#!"id="lt-ventana-registro">Política de privacidad</a>
+                            </small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" type="submit">Registrar</button>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    ¿Ya tenés tu cuenta?
+                    <a href="signin.html" id="lt-ventana-registro">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop Cart -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom">
+            <div class="text-start">
+                <h5 id="offcanvasRightLabel" class="mb-0 fs-4">Carrito</h5>
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="list-group list-group-flush">
+                    <!-- list group -->
+                    <li class="list-group-item py-3 ps-0 border-top">
+                        <!-- row -->
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-6 col-lg-7">
+                                <div class="d-flex">
+                                    <img src="../plantilla/assets/images/products/product-img-1.jpg" alt="Ecommerce" class="icon-shape icon-xxl" />
+                                    <div class="ms-3">
+                                        <!-- title -->
+                                        <a href="temps/shop-single.html" class="text-inherit">
+                                            <h6 class="mb-0">Producto</h6>
+                                        </a>
+                                        <span><small class="text-muted">Vendedor</small></span>
+                                        <!-- text -->
+                                        <div class="mt-2 small lh-1">
+                                            <a href="#!" class="text-decoration-none text-inherit">
+                                                <span class="me-1 align-text-bottom">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-trash-2 basura"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                    </svg>
+                                                </span>
+                                                <span class="text-muted">Eliminar del carrito</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- input group -->
+                            <div class="col-4 col-md-3 col-lg-3">
+                                <!-- input -->
+                                <!-- input -->
+                                <div class="input-group input-spinner">
+                                    <input type="button" value="-" class="button-minus btn btn-sm" data-field="quantity" />
+                                    <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field form-control-sm form-input" />
+                                    <input type="button" value="+" class="button-plus btn btn-sm" data-field="quantity" />
+                                </div>
+                            </div>
+                            <!-- price -->
+                            <div class="col-2 text-lg-end text-start text-md-end col-md-2">
+                                <span class="fw-bold">$precio</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- btn -->
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="escritorio_cuponeros.html" class="btn btn-primary">Continuar comprando</a>
+                    <a href="#!" class="btn btn-dark">Actualizar carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-6">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5 class="mb-1" id="locationModalLabel">Elegí tu ubicación actual</h5>
+                            <p class="mb-0 small"></p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="my-5">
+                        <input type="search" class="form-control" placeholder="Encontrá tu ubicación" />
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6 class="mb-0">Seleccioná tu ubicación</h6>
+                        <a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Borrar todos</a>
+                    </div>
+                    <div>
+                        <div data-simplebar style="height: 300px">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action active">
+                                    <span>Colombia</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
+                                    <span>Argentina</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+            .leaflet-container {
+                height: 400px;
+                width: 100%;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
+
+        <!-- Primeras ofertas -->
+        <section class="mt-8">
+            <div class="container">
+                <h6 id="ciudad"></h6>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3 mb-lg-0">
+                        <div>
+                            <div class="py-10 px-8 rounded" style="background: url(plantilla/assets/images/banner/grocery-banner-2.jpg) no-repeat; background-size: cover; background-position: center; border: 2px solid darkgray;">
+                            <div>
+                                <h3 class="fw-bold mb-1">OFERTA</h3>
+                                <p class="mb-4">
+                                    Obtené un
+                                    <span class="fw-bold">%</span>
+                                    de descuento
+                                </p>
+                                <a href="#!" class="btn btn-dark">Comprar ahora</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <div class="py-10 px-8 rounded" style="background: url(plantilla/assets/images/banner/grocery-banner-2.jpg) no-repeat; background-size: cover; background-position: center; border: 2px solid darkgray;">
+                            <div>
+                                <h3 class="fw-bold mb-1">OFERTA</h3>
+                                <p class="mb-4">
+                                    Obtené un
+                                    <span class="fw-bold">%</span>
+                                    de descuento
+                                </p>
+                                <a href="#!" class="btn btn-dark">Comprar ahora</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa -->
+        <section class="mt-8">
+            <!-- contianer -->
+            <div style="width:100%" class="container">
+               <div class="row">
+                  <!-- col -->
+                  <div class="col-12">
+                     <!-- cta -->
+                    <div  class="bg-light d-lg-flex justify-content-between align-items-center py-2 py-lg-3 px-2 text-center text-lg-start rounded" >
+                        <div id="map" style="width:100%"  ></div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </section>
+        
+        <!-- Categorias -->
+        <section class="mb-lg-14 mb-8">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                  <div class="col-12">
+                     <div class="mb-6 d-xl-flex justify-content-between align-items-center">
+                        <!-- heading -->
+                    
+                        <div >
+                           <!-- nav -->
+                           <nav >
+                              <ul  style="width:100%;display:flex;   justify-content:center"  class="nav nav-pills nav-scroll border-bottom-0 gap-1 " id="nav-tab" role="tablist">
+                                 <!-- nav item -->
+                                 <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                
+                                    <a  
+                                    style="font-size:75%; width:100px; display:flex;    align-items: center; "
+                                       href="#"
+                                       class="nav-link active"
+                                       id="nav-para-los-peludos"
+                                       data-bs-toggle="tab"
+                                       data-bs-target="#para-los-peludos"
+                                       role="tab"
+                                       aria-controls="para-los-peludos"
+                                       aria-selected="true">
+                                       <img class="icono" src="../static/assets/peludos.png">
+                                       Para los peludos
+                                    </a>
+                                 </li>
+                            
+                                 <!-- nav item -->
+                                 <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:97px; display:flex;    align-items: center; " href="#"  class="nav-link" id="nav-para-tu-mesa" data-bs-toggle="tab" data-bs-target="#para-tu-mesa" role="tab" aria-controls="para-tu-mesa" aria-selected="false">
+                                        <img class="icono" src="../static/assets/paratumesa.png">Para tu mesa
+                                    </a>
+
+                                 </li>
+                                 <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:95px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-tea-tab" data-bs-toggle="tab" data-bs-target="#nav-tea" role="tab" aria-controls="nav-tea" aria-selected="false">
+                                        <img class="icono" src="../static/assets/paratupaladar.png">Para tu paladar
+                                    </a>
+
+                                 </li>
+                                 <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:115px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/inmobiliaria.png">Inmobiliaria Automotriz
+                                    </a>
+
+                                 </li>
+
+                                    <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:100px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/paradisfrutar.png">Para Disfrutar
+                                    </a>
+
+                                 </li>
+
+                                     <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:120px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/gobernantes.png">Para Los Gobernantes
+                                    </a>
+
+                                 </li>
+
+
+                                     <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:116px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/paraquienamas.png">Para Quien Amas
+                                    </a>
+
+                                 </li>
+
+                                      <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:105px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/paratubienestar.png">Para Tu Bienestar
+                                    </a>
+
+                                 </li>
+
+                                   <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/paratumente.png">Para Tu Mente
+                                    </a>
+
+                                 </li>
+
+                                     <!-- nav item -->
+                                     <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/paratuhogar.png">Para Tu Hogar
+                                    </a>
+
+                                 </li>
+
+                                   <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:122px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/serviciosprfesionales.png">Servicios Profesionales
+                                    </a>
+
+                                 </li>
+
+
+                                   <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/recilaygana.png">Recicla Y Gana
+                                    </a>
+
+                                 </li>
+
+                                   <!-- nav item -->
+                                   <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a style="font-size:75%; width:110px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
+                                    <img class="icono" src="../static/assets/tecnologia.png">Tecnología
+                                    </a>
+
+                                 </li>
+
+                                 
+                                    <!-- nav item -->
+
+                                    <li style="display:flex;  align-items: center; "  class="nav-item">
+                                    <!-- nav link -->
+                                    <a
+                                    style="font-size:75%; width:92px; display:flex;    align-items: center; "
+
+                                       href="#"
+                                       class="nav-link"
+                                       id="nav-snackMunchies-tab"
+                                       data-bs-toggle="tab"
+                                       data-bs-target="#mascotas-mas"
+                                       role="tab"
+                                       aria-controls="mascotas-mas"
+                                       aria-selected="false">
+                                       <img class="icono" src="../static/assets/parati.png">
+                                       Para tí
+             
+                                    </a>
+                                 </li>
+                                 
+
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <!-- row -->
+                <div style="position:relative"class="row">
+                    <!-- tab -->
+                    <div id="result-container2" >
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Products Start-->
+        <section class="my-lg-14 my-8">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 mb-6">
+                     <h3 class="mb-0">Popular Products</h3>
+                  </div>
+               </div>
+
+               <div class="row g-4 row-cols-lg-5 row-cols-2 row-cols-md-3">
+                  <div class="col">
+                     <div class="card card-product">
+                        <div class="card-body">
+                           <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                              <div class="position-absolute top-0 start-0">
+                                 <span class="badge bg-danger"></span>
+                              </div>
+                              <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                              <div class="card-product-action">
+                                 <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                    <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Ver"></i>
+                                 </a>
+                                 <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                              </div>
+                           </div>
+                           <div class="text-small mb-1">
+                              <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                           </div>
+                            <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                           <div>
+                              <small class="text-warning">
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-fill"></i>
+                                 <i class="bi bi-star-half"></i>
+                              </small>
+                              <span class="text-muted small">info</span>
+                           </div>
+                           <div class="d-flex justify-content-between align-items-center mt-3">
+                              <div>
+                                 <span class="text-dark">$precio</span>
+                                 <span class="text-decoration-line-through text-muted">$anterior</span>
+                              </div>
+                              <div>
+                                 <a href="#!" class="btn btn-primary btn-sm">
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="16"
+                                       height="16"
+                                       viewBox="0 0 24 24"
+                                       fill="none"
+                                       stroke="currentColor"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                       class="feather feather-plus">
+                                       <line x1="12" y1="5" x2="12" y2="19"></line>
+                                       <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var defaultLat = 4.60971;
+                        var defaultLng = -74.08175;
+            
+                        const map = L.map('map').setView([defaultLat, defaultLng], 4);
+                        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: ''
+                        }).addTo(map);
+            
+                        const marker = L.marker([defaultLat, defaultLng], { draggable: true }).addTo(map)
+                            .bindPopup('<b>Estás acá</b>').openPopup();
+            
+                        const circle = L.circle([defaultLat, defaultLng], {
+                            color: 'red',
+                            fillColor: '#f03',
+                            fillOpacity: 0.5,
+                            radius: 500
+                        }).addTo(map).bindPopup('I am a circle.');
+            
+                        function updateCity(lat, lng) {
+                            // Utilizar Nominatim para obtener la dirección
+                            const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`;
+            
+                            fetch(nominatimUrl)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const ciudad = data.address.city || data.address.town || data.address.village || data.address.hamlet;
+             
+            
+                                 
+               
+                        var selectedFilter = ciudad;
+            
+                        $.ajax({
+                            type: 'GET',
+                            url: 'tu_script_php_que_procesa_el_filtro2.php',
+                            data: { filter: selectedFilter },
+                            success: function(response) {
+                                $('#result-container2').html(response);
+                                document.getElementById('ciudad').innerText = ciudad;
+            
+                            }
+                        });
+                    
+             
+                                })
+                                .catch(error => console.error('Error al obtener la dirección:', error));
+                        }
+            
+                        // Al mover el marcador
+                        marker.on('moveend', function (e) {
+                            const latlng = e.target.getLatLng();
+                            updateCity(latlng.lat, latlng.lng);
+                        });
+            
+                        // Al cargar la página
+                        updateCity(defaultLat, defaultLng);
+            
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(
+                                function(position) {
+                                    var latitud = position.coords.latitude;
+                                    var longitud = position.coords.longitude;
+            
+                                    map.setView([latitud, longitud], 13);
+                                    marker.setLatLng([latitud, longitud]);
+                                    circle.setLatLng([latitud, longitud]);
+            
+                                    updateCity(latitud, longitud);
+                                },
+                                function(error) {
+                                    switch (error.code) {
+                                        case error.PERMISSION_DENIED:
+                                            // El usuario rechazó la geolocalización, se mantiene la ubicación predeterminada
+                                            break;
+                                        case error.POSITION_UNAVAILABLE:
+                                            alert("La información de ubicación no está disponible.");
+                                            break;
+                                        case error.TIMEOUT:
+                                            alert("La solicitud para obtener la ubicación del usuario ha caducado.");
+                                            break;
+                                        case error.UNKNOWN_ERROR:
+                                            alert("Se produjo un error desconocido al intentar obtener la ubicación del usuario.");
+                                            break;
+                                    }
+                                }
+                            );
+                        } else {
+                            alert("La geolocalización no es compatible en este navegador.");
+                        }
+                    });
+                </script>
+            
+                <div class="rtcl rtcl-listings-sc-wrapper has-map ">
+                    <div class="rtcl-listings-wrapper">
+                        <div class="rtcl-notices-wrapper">
+
+                        </div>
+                        <div class="rtcl-listings rtcl-grid-view columns-3">
+                        <div class="listing-item rtcl-listing-item post-154 status-publish is-featured is-sell is-bump-up rtcl_location-bogota rtcl_location-chia">
+
+    <!-- Javascript-->
+
+    <!-- Libs JS -->
+    <!-- <script src="../plantilla/assets/libs/jquery/dist/jquery.min.js"></script>  -->
+    <script src="../plantilla/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../plantilla/assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../plantilla/assets/js/theme.min.js"></script>
+
+      <script src="../plantilla/assets/js/vendors/jquery.min.js"></script>
+      <script src="../plantilla/assets/js/vendors/countdown.js"></script>
+      <script src="../plantilla/assets/libs/slick-carousel/slick/slick.min.js"></script>
+      <script src="../plantilla/assets/js/vendors/slick-slider.js"></script>
+      <script src="../plantilla/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+      <script src="../plantilla/assets/js/vendors/tns-slider.js"></script>
+      <script src="../plantilla/assets/js/vendors/zoom.js"></script>
+
+
+      
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
 </body>
 </html>
