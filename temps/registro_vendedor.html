@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from freshcart.codescandy.com/pages/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 03:19:19 GMT -->
+<head>
+      <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="Codescandy" name="author">
+      <title>Registrate en LaCuponera</title>
+      <!-- Favicon icon-->
+<link rel="shortcut icon" type="image/png" href="../static/assets/cupon%20(2).png?ver=2.0">
+
+
+<!-- Libs CSS -->
+<link href="../plantilla/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../plantilla/assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
+<link href="../plantilla/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../plantilla/assets/css/theme.min.css">
+<style>
+    /* Estilos personalizados */
+    @font-face {
+        font-family: "Montserrat Regular";
+        src: url("../static/assets/Montserrat-Regular.ttf");
+    }
+
+    .navbar {
+        background-color: rgb(54, 134, 209);
+    }
+
+    .navbar-text {
+        font-family: 'Montserrat Regular';
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .col {
+        width: 80%;
+    }
+</style>
+   </head>
+
+   <body>
+      <!-- navigation -->
+<div class="border-bottom shadow-sm">
+  <nav class="navbar navbar-light py-2">
+    <div class="container justify-content-center justify-content-lg-between">
+      <a class="navbar-brand" href="../plantilla/temps/index-2.html">
+        <img src="../static/assets/logo.png" alt="" class="d-inline-block align-text-top logo">
+      </a>
+      <span class="navbar-text">
+        ¿Ya tenés una cuenta? <a href="signin.html">Iniciar sesión</a>
+      </span>
+    </div>
+  </nav>
+</div>
+
+ 
+    <main>
+         <!-- section -->
+
+         <section class="my-lg-14 my-8">
+            <!-- container -->
+            <div class="container">
+               <!-- row -->
+               <div class="row justify-content-center align-items-center">
+                    <!-- <div class="col-12 col-md-6 col-lg-4 order-lg-1 order-2">
+                         img --><!--
+                        <img src="../static/assets/singup.png" alt="" class="img-fluid" />
+                    </div> -->
+                    <!-- col -->
+                    <div class="container mt-5"><!-- col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1 -->
+                        <div class="mb-lg-9 mb-5 text-center">
+                            <h1 class="mb-1 h2 fw-bold">¡Hola Vendedor!</h1>
+                            <p>¡Bienvenido a LaCuponera! Registra tu Tienda on-line de OFERTAS</p>
+                        </div>
+                        <!-- form -->
+                        <form id="storeRegistrationForm" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <!-- col -->
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="storeName" class="form-label">Nombre de la tienda</label>
+                                    <input type="text" class="form-control" id="storeName" placeholder="Ingresa el nombre de tu tienda" required>
+                                    <div class="invalid-feedback">Por favor, ingresá tu nombre</div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="storeAddress" class="form-label">Dirección / Tienda Física</label>
+                                    <input type="text" class="form-control" id="storeAddress" placeholder="Ingresa la direccion de tu tienda" required>
+                                    <div class="invalid-feedback">Por favor, ingresá la direccipon de tu tienda</div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="storeDescription" class="form-label">Descripción Comercial</label>
+                                    <textarea class="form-control" id="storeDescription" rows="3" placeholder="Quienes son? Que hacen?"></textarea>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="socialMedia" class="form-label">Redes Sociales</label>
+                                    <input type="text" class="form-control" id="socialMedia" placeholder="Lhaks/@nombre de tus redes sociales">
+                                </div>
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="websiteLink" class="form-label">Página web Link</label>
+                                    <input type="text" class="form-control" id="websiteLink" placeholder="Link a la pagina web">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="storeHours" class="form-label">Horarios de atencion de tu Tienda Fisica</label>
+                                    <input type="text" class="form-control" id="storeHours" placeholder="Horarios de tu Tienda Fisica">
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="representativeName" class="form-label">Nombre y Apellidos del Representante Legal</label>
+                                    <input type="text" class="form-control" id="representativeName" placeholder="Representante Legal" required>
+                                    <div class="invalid-feedback">Por favor, ingresá los datos del Representante Legal de la tienda</div>
+                                </div>
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="companyNIT" class="form-label">NIT De empresa *</label>
+                                    <input type="number" class="form-control" id="companyNIT" placeholder="NIT" required>
+                                    <div class="invalid-feedback">Por favor, ingresá tu Número de identificación tributaria (NIT)</div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="formSignupEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="formSignupEmail" placeholder="Correo electrónico" required />
+                                    <div class="invalid-feedback">Por favor, ingresá el mail de tu marca</div>
+                                </div>
+                                <div class="col mb-3">
+                                    <!-- input -->
+                                    <label for="phoneNumber" class="form-label">Número Telefonico de Contacto</label>
+                                    <input type="text" class="form-control" id="phoneNumber" placeholder="Número de Contacto / Whatsapp Business" required>
+                                    <div class="invalid-feedback">Por favor, ingresá un numero de telefono</div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col mb-3">
+                                    <div class="password-field position-relative">
+                                        <label for="formSignupPassword" class="form-label">Contraseña</label>
+                                        <div class="password-field position-relative">
+                                            <input type="password" class="form-control fakePassword" id="formSignupPassword" placeholder="********" required />
+                                            <span><i class="bi bi-eye-slash passwordToggler"></i></span>
+                                            <div class="invalid-feedback">Por favor, ingresá tu contraseña</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- btn -->
+                                <div class="col-12 d-grid">
+                                    <button type="submit"  id="registro"  style="background-color:#F9ED48;border: none; color: black;"  class="btn btn-primary">Registrar</button>
+                                </div>
+
+                                <!-- text -->
+                                <p>
+                                    <small>
+                                        <a href="#!"  style=" color:#a79c03;">Términos de servicio</a>
+                                        y
+                                        <a href="#!"  style=" color:#a79c03;">Política de privacidad</a>
+                                    </small>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+      <script src="../plantilla/assets/js/vendors/validation.js?ver=3.4"></script>
+
+    <!-- Javascript-->
+    <!-- Libs JS -->
+    <!-- <script src="../assets/libs/jquery/dist/jquery.min.js"></script> -->
+    <script src="../plantilla/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../plantilla/assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../plantilla/assets/js/theme.min.js"></script>
+
+    <script src="../plantilla/assets/js/vendors/password.js"></script>
+   </body>
+</html>

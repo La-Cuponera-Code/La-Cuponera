@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a La Cuponera</title>
  
-    <link rel="shortcut icon" type="image/png" href="../static/assets/cupon (2).png">
+    <link rel="shortcut icon" type="image/png" href="../static/assets/cuponero.png">
     
-      <!-- Styles -->
-   
-      <!-- Theme Styles -->  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-        
-        <!-- Custom CSS -->
-    <link rel="stylesheet" href="../static/css/public.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/generales.css">
 </head>
 <body cz-shortcut-listen="true">
-    <div id="map"  ></div>
+    <div id="map"></div>
  
+    <!-- Leaflet Script -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -101,59 +102,33 @@
             }
         });
     </script>
-
-
-    <div class="container">
-        <img class="logo" src="../static/assets/logo.png?ver=2.0">
-
-        <h1  id="pais" hidden></h1>
- 
-        <h3><img class="logo" src="../static/assets/descuento.png?ver=2.0"></h3>
-
-        <div class="content">
-            <div onclick="cambiar('cuponero')">
-            <div class="element1">            
-                <img class="circulo" src="../static/assets/cuponero.png?ver=2.2">
+    <div id="overlay">
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <img class="img-fluid logo" src="../static/assets/logo.png?ver=2.0" alt="Logo">
+                </div>
             </div>
-            <h2>Soy Cuponero</h2>
-            </div>
-
-        <div onclick="cambiar('vendedor')">
-            <div class="element2">            
-                <img class="circulo" src="../static/assets/vendedor.png?ver=2.2">
-            </div>
-            <h2>Soy Vendedor</h2>
         </div>
 
-        </div>
-
-        <h4 class="registro">¿Aún no tenés tu cuenta? <a href="signup.html" style="color:#f6e901; cursor: pointer; text-decoration: none;"> Registrate acá</a></h4>
-
-        <div class="redes">                
-            <img class="circulo" src="../static/assets/x.png">
-            <img class="circulo" src="../static/assets/icon-insta.png">
-            <img class="circulo" src="../static/assets/youtube.png">
+        <div class="container text-center">
+            <h1 id="pais" hidden></h1>
         </div>
     </div>
+    
 
-  <script>
-    function cambiar(v){
-
-        const pais =  document.getElementById('pais').textContent;
-        alert(pais);
-        if(pais == "Colombia" || pais == "Argentina" && v == "cuponero"){
-            const nuevaPagina = 'signin.html';
-
-            // Redirigir a la nueva página
-            window.location.href = nuevaPagina;
-
-        }else if(pais == "Colombia" || pais == "Argentina" && v == "vendedor"){
-            const nuevaPagina = 'escritorio_vendedor.html';
-
-            // Redirigir a la nueva página
-            window.location.href = nuevaPagina;
+    <script>
+        function cambiar(v) {
+            const pais = document.getElementById('pais').textContent;
+            alert(pais);
+            if ((pais === "Colombia" || pais === "Argentina") && v === "cuponero") {
+                const nuevaPagina = 'signin.html';
+                window.location.href = nuevaPagina;
+            } else if ((pais === "Colombia" || pais === "Argentina") && v === "vendedor") {
+                const nuevaPagina = 'escritorio_vendedor.html';
+                window.location.href = nuevaPagina;
+            }
         }
-    }
-  </script>
+    </script>
 </body>
 </html>
