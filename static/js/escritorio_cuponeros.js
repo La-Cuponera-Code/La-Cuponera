@@ -139,3 +139,27 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("La geolocalización no es compatible en este navegador.");
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Select the carousel
+    var carousel = document.getElementById('productCarousel');
+
+    // Example: Dynamically add product items to the carousel
+    var productItems = []; // Array of product items, you need to populate this with your product data
+    productItems.forEach(function(item, index) {
+        var itemHtml = `<div class="carousel-item ${index === 0 ? 'active' : ''}">
+                            <div class="row">
+                                <!-- Your product cards here -->
+                                <!-- Example product card -->
+                                <div class="col">
+                                    <!-- Your product card content -->
+                                </div>
+                            </div>
+                        </div>`;
+        carousel.querySelector('.carousel-inner').insertAdjacentHTML('beforeend', itemHtml);
+    });
+
+    // Initialize the carousel
+    new bootstrap.Carousel(carousel);
+    
+});

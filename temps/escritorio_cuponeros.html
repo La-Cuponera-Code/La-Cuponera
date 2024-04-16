@@ -35,6 +35,13 @@
         <img class="wsap" style=" width:10%;margin:2% 0% 0% -2%" src="../static/assets/wsap.png">
     </div>
 
+    <div class="vendedor">
+        <!-- <img src="../static/assets/winwin/WinWinLado2PNG.png"> -->
+        <i class="bi bi-piggy-bank-fill"></i>
+        Registrá tu tienda online 
+        <a href="https://lacuponera.digital/" target="_blank" class="btn btn-dark">Registrar</a>
+    </div>
+
     <!-- navbar -->
     <div class="border-bottom" id="barra">
         <div class="py-5">
@@ -111,8 +118,13 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="list-inline-item me-5">
-                                <a href="#!" class="text-muted">
+                            <div class="nav-item dropdown list-inline-item me-5 w-100 w-lg-auto dropdown-fullwidth">
+                                <a  class="nav-link dropdown-toggle"
+                                    data-bs-toggle="collapse"
+                                    href="#collapseExample"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="collapseExample">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="20"
@@ -129,6 +141,19 @@
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
                                 </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="">
+                                        <i class="bi bi-person-circle"></i>
+                                        Mi Perfil
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="">
+                                        <i class="bi bi-arrow-down-circle-fill"></i>
+                                        Mis Descargas
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="">Mis Puntos</a></li>
+                                    <li><a class="dropdown-item" href="">Mi Historial</a></li>
+                                    <li><a class="dropdown-item" href="">Tus Marcas</a></li>
+                                </ul>
                             </div>
                             <div class="list-inline-item me-5 me-lg-0">
                                 <a class="text-muted position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
@@ -330,7 +355,7 @@
                                                 <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Milk Drinks</a>
                                                 <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Curd & Yogurt</a>
                                                 <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Eggs</a>
-                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Buns & Bakery</a>
+                                                <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Buns & paradisfrutar</a>
                                                 <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Cheese</a>
                                                 <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Condensed Milk</a>
                                                 <a class="dropdown-item" href="../plantilla/temps/shop-grid.html">Dairy Products</a>
@@ -366,7 +391,7 @@
                                                             <br />
                                                             offer today.
                                                         </h5>
-                                                        <a href="#" class="btn btn-primary btn-sm mt-3">Shop Now</a>
+                                                        <a href="#" class="btn btn-primary btn-sm mt-3">Comprar ahora</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -397,6 +422,10 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="col">
+                            <!-- <img src="../static/assets/winwin/7b559496-1c5b-469e-b7e8-cb3f2428d41b.gif" class="img-fluid" alt="GIF" style="height: 20%;"> -->
                         </div>
                     </div>
                 </div>
@@ -563,8 +592,6 @@
     </div>
 
     <main>
-        
-        
         <style>
             html, body {
                 height: 100%;
@@ -577,6 +604,58 @@
                 max-height: 100%;
             }
         </style>
+
+        <!-- Banner -->
+        <section class="mt-8">
+            <div class="container">
+            <div class="hero-slider">
+                <div style="background: url() no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center; border: 2px solid black;">
+                    <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
+                        <span class="badge text-bg-warning">Sale</span>
+
+                        <h2 class="text-dark display-5 fw-bold mt-4">OFERTA</h2>
+                        <p class="lead"></p>
+                        <a href="#!" class="btn btn-dark mt-3">
+                        Comprar ahora
+                        <i class="feather-icon icon-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div style="background: url() no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center; border: 2px solid black;">
+                    <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
+                        <span class="badge text-bg-warning">Sale</span>
+                        <h2 class="text-dark display-5 fw-bold mt-4">
+                        OFERTA
+                        <br />
+                        
+                        <span class="text-primary">%</span>
+                        </h2>
+                        <p class="lead"></p>
+                        <a href="#!" class="btn btn-dark mt-3">
+                        Comprar ahora
+                        <i class="feather-icon icon-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- Mapa -->
+        <section class="mt-8">
+            <!-- contianer -->
+            <div style="width:100%" class="container">
+               <div class="row">
+                  <!-- col -->
+                  <div class="col-12">
+                     <!-- cta -->
+                    <div  class="bg-light d-lg-flex justify-content-between align-items-center py-2 py-lg-3 px-2 text-center text-lg-start rounded" >
+                        <div id="map" style="width:100%"  ></div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </section>
 
         <!-- Primeras ofertas -->
         <section class="mt-8">
@@ -616,280 +695,794 @@
                 </div>
             </div>
         </section>
-
-        <!-- Mapa -->
-        <section class="mt-8">
-            <!-- contianer -->
-            <div style="width:100%" class="container">
-               <div class="row">
-                  <!-- col -->
-                  <div class="col-12">
-                     <!-- cta -->
-                    <div  class="bg-light d-lg-flex justify-content-between align-items-center py-2 py-lg-3 px-2 text-center text-lg-start rounded" >
-                        <div id="map" style="width:100%"  ></div>
-                    </div>
-                  </div>
-               </div>
-            </div>
-        </section>
         
-        <!-- Categorias -->
-        <section class="mb-lg-14 mb-8">
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                  <div class="col-12">
-                     <div class="mb-6 d-xl-flex justify-content-between align-items-center">
-                        <!-- heading -->
-                    
-                        <div >
-                           <!-- nav -->
-                           <nav >
-                              <ul  style="width:100%;display:flex;   justify-content:center"  class="nav nav-pills nav-scroll border-bottom-0 gap-1 " id="nav-tab" role="tablist">
-                                 <!-- nav item -->
-                                 <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                
-                                    <a  
-                                    style="font-size:75%; width:100px; display:flex;    align-items: center; "
-                                       href="#"
-                                       class="nav-link active"
-                                       id="nav-para-los-peludos"
-                                       data-bs-toggle="tab"
-                                       data-bs-target="#para-los-peludos"
-                                       role="tab"
-                                       aria-controls="para-los-peludos"
-                                       aria-selected="true">
-                                       <img class="icono" src="../static/assets/peludos.png">
-                                       Para los peludos
-                                    </a>
-                                 </li>
-                            
-                                 <!-- nav item -->
-                                 <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:97px; display:flex;    align-items: center; " href="#"  class="nav-link" id="nav-para-tu-mesa" data-bs-toggle="tab" data-bs-target="#para-tu-mesa" role="tab" aria-controls="para-tu-mesa" aria-selected="false">
-                                        <img class="icono" src="../static/assets/paratumesa.png">Para tu mesa
-                                    </a>
-
-                                 </li>
-                                 <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:95px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-tea-tab" data-bs-toggle="tab" data-bs-target="#nav-tea" role="tab" aria-controls="nav-tea" aria-selected="false">
-                                        <img class="icono" src="../static/assets/paratupaladar.png">Para tu paladar
-                                    </a>
-
-                                 </li>
-                                 <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:115px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/inmobiliaria.png">Inmobiliaria Automotriz
-                                    </a>
-
-                                 </li>
-
-                                    <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:100px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/paradisfrutar.png">Para Disfrutar
-                                    </a>
-
-                                 </li>
-
-                                     <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:120px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/gobernantes.png">Para Los Gobernantes
-                                    </a>
-
-                                 </li>
-
-
-                                     <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:116px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/paraquienamas.png">Para Quien Amas
-                                    </a>
-
-                                 </li>
-
-                                      <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:105px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/paratubienestar.png">Para Tu Bienestar
-                                    </a>
-
-                                 </li>
-
-                                   <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/paratumente.png">Para Tu Mente
-                                    </a>
-
-                                 </li>
-
-                                     <!-- nav item -->
-                                     <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/paratuhogar.png">Para Tu Hogar
-                                    </a>
-
-                                 </li>
-
-                                   <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:122px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/serviciosprfesionales.png">Servicios Profesionales
-                                    </a>
-
-                                 </li>
-
-
-                                   <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:98px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/recilaygana.png">Recicla Y Gana
-                                    </a>
-
-                                 </li>
-
-                                   <!-- nav item -->
-                                   <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a style="font-size:75%; width:110px; display:flex;    align-items: center; " href="#" class="nav-link" id="nav-drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-drinks" role="tab" aria-controls="nav-drinks" aria-selected="false">
-                                    <img class="icono" src="../static/assets/tecnologia.png">Tecnología
-                                    </a>
-
-                                 </li>
-
-                                 
-                                    <!-- nav item -->
-
-                                    <li style="display:flex;  align-items: center; "  class="nav-item">
-                                    <!-- nav link -->
-                                    <a
-                                    style="font-size:75%; width:92px; display:flex;    align-items: center; "
-
-                                       href="#"
-                                       class="nav-link"
-                                       id="nav-snackMunchies-tab"
-                                       data-bs-toggle="tab"
-                                       data-bs-target="#mascotas-mas"
-                                       role="tab"
-                                       aria-controls="mascotas-mas"
-                                       aria-selected="false">
-                                       <img class="icono" src="../static/assets/parati.png">
-                                       Para tí
-             
-                                    </a>
-                                 </li>
-                                 
-
-                              </ul>
-                           </nav>
-                        </div>
-                     </div>
-                  </div>
-                </div>
-                <!-- row -->
-                <div style="position:relative"class="row">
-                    <!-- tab -->
-                    <div id="result-container2" >
-                </div>
-            </div>
-        </section>
-
-        <!-- Popular Products Start-->
-        <section class="my-lg-14 my-8">
+        <!-- Category Section Start-->
+        <section class="mb-lg-10 mt-lg-14 my-8">
             <div class="container">
                <div class="row">
                   <div class="col-12 mb-6">
-                     <h3 class="mb-0">Popular Products</h3>
+                     <h3 class="mb-0">Categorias</h3>
                   </div>
                </div>
-
-               <div class="row g-4 row-cols-lg-5 row-cols-2 row-cols-md-3">
-                  <div class="col">
-                     <div class="card card-product">
-                        <div class="card-body">
-                           <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
-                              <div class="position-absolute top-0 start-0">
-                                 <span class="badge bg-danger"></span>
-                              </div>
-                              <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
-
-                              <div class="card-product-action">
-                                 <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
-                                    <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Ver"></i>
-                                 </a>
-                                 <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
-                              </div>
-                           </div>
-                           <div class="text-small mb-1">
-                              <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
-                           </div>
-                            <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
-                           <div>
-                              <small class="text-warning">
-                                 <i class="bi bi-star-fill"></i>
-                                 <i class="bi bi-star-fill"></i>
-                                 <i class="bi bi-star-fill"></i>
-                                 <i class="bi bi-star-fill"></i>
-                                 <i class="bi bi-star-half"></i>
-                              </small>
-                              <span class="text-muted small">info</span>
-                           </div>
-                           <div class="d-flex justify-content-between align-items-center mt-3">
-                              <div>
-                                 <span class="text-dark">$precio</span>
-                                 <span class="text-decoration-line-through text-muted">$anterior</span>
-                              </div>
-                              <div>
-                                 <a href="#!" class="btn btn-primary btn-sm">
-                                    <svg
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       width="16"
-                                       height="16"
-                                       viewBox="0 0 24 24"
-                                       fill="none"
-                                       stroke="currentColor"
-                                       stroke-width="2"
-                                       stroke-linecap="round"
-                                       stroke-linejoin="round"
-                                       class="feather feather-plus">
-                                       <line x1="12" y1="5" x2="12" y2="19"></line>
-                                       <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg>
-                                 </a>
-                              </div>
+               <div class="category-slider">
+                  <div class="item">
+                     <a href="temps/shop-grid.html" class="text-decoration-none text-inherit">
+                        <div class="card card-product mb-lg-4">
+                           <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                              <img src="../static/assets/peludos.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                              <div class="text-truncate">Para los peludos</div>
                            </div>
                         </div>
-                     </div>
+                     </a>
                   </div>
-
-
-
-                
-                
-            
-                <div class="rtcl rtcl-listings-sc-wrapper has-map ">
-                    <div class="rtcl-listings-wrapper">
-                        <div class="rtcl-notices-wrapper">
-
+                  <div class="item">
+                     <a href="" class="text-decoration-none text-inherit">
+                        <div class="card card-product mb-lg-4">
+                           <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                              <img src="../static/assets/paratumesa.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                              <div class="text-truncate">Para tu mesa</div>
+                           </div>
                         </div>
-                        <div class="rtcl-listings rtcl-grid-view columns-3">
-                        <div class="listing-item rtcl-listing-item post-154 status-publish is-featured is-sell is-bump-up rtcl_location-bogota rtcl_location-chia">
+                     </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/paratupaladar.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para tu paladar</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/inmobiliaria.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;" />
+                             <div class="text-truncate">Inmobiliaria & Automotriz</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/paradisfrutar.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para Disfrutar</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/gobernantes.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para los gobernantes</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/paraquienamas.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para quien amas</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/paratubienestar.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para tu bienestar</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/paratumente.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para tu mente</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/paratuhogar.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para tu hogar</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/serviciosprfesionales.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Servicios Profesionales</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/recilaygana.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Reciclá y Ganá</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/tecnologia.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Tecnología</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="item">
+                    <a href="" class="text-decoration-none text-inherit">
+                       <div class="card card-product mb-lg-4">
+                          <div class="card-body text-center py-8" style="display: flex; flex-direction: column; align-items: center;">
+                             <img src="../static/assets/parati.png" alt="Producto La Cuponera" class="mb-3 img-fluid" style="width: 110px; height: 110px;"/>
+                             <div class="text-truncate">Para tí</div>
+                          </div>
+                       </div>
+                    </a>
+                 </div>
+               </div>
+            </div>
+        </section>
+         <!-- Category Section End-->
+
+        <!-- Popular Products Start-->
+        <section class="my-lg-14 my-8">
+            <style>
+                /* CSS personalizado para cambiar el color de las flechas del carrusel */
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    background-color: black; /* Cambia el color de las flechas a negro */
+                }
+            </style>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Title -->
+                    <div>
+                        <h3 class="mb-0">Cupones</h3>
+                        <p class="mb-0">Conseguí cupones de tus productos favoritos</p>
+                    </div>
+                    <!-- row -->
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 60%; overflow: hidden; display: flex; flex-wrap: nowrap;">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev" >
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black;"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <div class="carousel-inner"  style="width: 95%; padding-left: 10%; text-align: center;">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a
+                                                    href="#"
+                                                    class="nav-link active"
+                                                    id="nav-parati-tab"
+                                                    data-bs-toggle="tab"
+                                                    data-bs-target="#nav-parati"
+                                                    role="tab"
+                                                    aria-controls="nav-parati"
+                                                    aria-selected="true">
+                                                    Para ti
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a
+                                                    href="#"
+                                                    class="nav-link"
+                                                    id="nav-peludos-tab"
+                                                    data-bs-toggle="tab"
+                                                    data-bs-target="#nav-peludos"
+                                                    role="tab"
+                                                    aria-controls="nav-peludos"
+                                                    aria-selected="false">
+                                                    Para los peludos
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paradisfrutar-tab" data-bs-toggle="tab" data-bs-target="#nav-paradisfrutar" role="tab" aria-controls="nav-paradisfrutar" aria-selected="false">
+                                                    Para disfrutar
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paratupaladar-tab" data-bs-toggle="tab" data-bs-target="#nav-paratupaladar" role="tab" aria-controls="nav-paratupaladar" aria-selected="false">
+                                                    Para tu paladar
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paraquienamas-tab" data-bs-toggle="tab" data-bs-target="#nav-paraquienamas" role="tab" aria-controls="nav-paraquienamas" aria-selected="false">
+                                                    Para quien amas
+                                                </a>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paratuhogar-tab" data-bs-toggle="tab" data-bs-target="#nav-paratuhogar" role="tab" aria-controls="nav-paratuhogar" aria-selected="false">
+                                                    Para tu hogar
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paratubienestar-tab" data-bs-toggle="tab" data-bs-target="#nav-paratubienestar" role="tab" aria-controls="nav-paratubienestar" aria-selected="false">
+                                                    Para tu bienestar
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paratumente-tab" data-bs-toggle="tab" data-bs-target="#nav-paratumente" role="tab" aria-controls="nav-paratumente" aria-selected="false">
+                                                    Para tu mente
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-inmobiliaria-tab" data-bs-toggle="tab" data-bs-target="#nav-inmobiliaria" role="tab" aria-controls="nav-inmobiliaria" aria-selected="false">
+                                                    Inmobiliaria & Automotriz
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-tecnologia-tab" data-bs-toggle="tab" data-bs-target="#nav-tecnologia" role="tab" aria-controls="nav-tecnologia" aria-selected="false">
+                                                    Tecnología
+                                                </a>
+                                            </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-paratumesa-tab" data-bs-toggle="tab" data-bs-target="#nav-paratumesa" role="tab" aria-controls="nav-paratumesa" aria-selected="false">
+                                                    Para tu mesa
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-gobernantes-tab" data-bs-toggle="tab" data-bs-target="#nav-gobernantes" role="tab" aria-controls="nav-gobernantes" aria-selected="false">
+                                                    Para los gobernantes
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-serviciosprofesionales-tab" data-bs-toggle="tab" data-bs-target="#nav-serviciosprofesionales" role="tab" aria-controls="nav-serviciosprofesionales" aria-selected="false">
+                                                    Servicios Profesionales 
+                                                </a>
+                                            </div>
+                                            <!-- nav item -->
+                                            <div class="col">
+                                                <!-- nav link -->
+                                                <a href="#" class="nav-link" id="nav-reciclaygana-tab" data-bs-toggle="tab" data-bs-target="#nav-reciclaygana" role="tab" aria-controls="nav-reciclaygana" aria-selected="false">
+                                                    Reciclá & Ganá
+                                                </a>
+                                            </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next"  style="width: 5%;">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="color:black;"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>                    
+                    </div>
+                </div>
+                <div class="row g-4 row-cols-lg-5 row-cols-2 row-cols-md-3 productos">
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-product-v2 h-100">
+                                <div class="card-body position-relative">
+                                    <div class="text-center position-relative" style="width: 100%; height: 220px; border: solid 2px rgb(54, 134, 209);">
+                                        <div class="position-absolute top-0 start-0">
+                                            <span class="badge bg-danger"></span>
+                                        </div>
+                                        <a href="#!"><img src="" alt="Producto La Cuponera" class="mb-3 img-fluid" /></a>
+
+                                        <div class="product-action-btn">
+                                            <a href="#!" class="btn-action mb-1" data-bs-toggle="modal" data-bs-target="#quickViewModal" title="Ver">
+                                                <i class="bi bi-eye" title="Ver"></i><!--  data-bs-toggle="tooltip" data-bs-html="true"  -->
+                                            </a>
+                                            <a href="#!" class="btn-action  mb-1" data-bs-toggle="tooltip" data-bs-html="true" title="Favorito"><i class="bi bi-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-small mb-1">
+                                        <a href="#!" class="text-decoration-none text-muted"><small>Categoria</small></a>
+                                    </div>
+                                        <h2 class="fs-6"><a href="temps/shop-single.html" class="text-inherit text-decoration-none">Producto</a></h2>
+                                    <div>
+                                        <small class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </small>
+                                        <span class="text-muted small">4.5</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-dark">$precio</span>
+                                            <span class="text-decoration-line-through text-muted">$anterior</span>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="product-fade-block">
+                                        <div class="d-grid mt-4">
+                                        <a href="#" class="btn btn-primary rounded-pill">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hidden class for hover -->
+                                <div class="product-content-fade border-info" style="margin-bottom: -60px"></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+                
+                
+                
 
     <!-- Javascript-->
 
@@ -898,6 +1491,7 @@
     <script src="../plantilla/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../plantilla/assets/libs/simplebar/dist/simplebar.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
     <!-- Theme JS -->
     <script src="../plantilla/assets/js/theme.min.js"></script>

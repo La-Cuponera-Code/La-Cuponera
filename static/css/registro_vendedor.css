@@ -1,0 +1,25 @@
+/* Estilos personalizados */
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../static/assets/Montserrat-Regular.ttf");
+}
+
+.navbar {
+    background-color: rgb(54, 134, 209);
+}
+
+.navbar-text {
+    font-family: 'Montserrat Regular';
+}
+
+.logo {
+    width: 200px;
+}
+
+.container {
+    width: 100%;
+}
+
+.col {
+    width: 80%;
+}

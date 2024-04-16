@@ -13,6 +13,39 @@ animation-duration: 3s;
 animation-name: slidein;
 }
 
+.vendedor {
+  width: 100%;
+  height: auto;
+  background-color: #e2d326;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4%;
+}
+
+.vendedor i {
+  margin-right: 1%;
+  font-size: 20px;
+}
+
+.vendedor a {
+  /* background-color: rgb(54, 134, 209);
+  color:#e2d326; */
+  margin: 0.5% 1% 0.5% 1%;
+  height: auto;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vendedor a:hover {
+  box-shadow: 0 2px 4px -1px rgba(145,158,171,.2),0 4px 5px 0 rgba(145,158,171,.14),0 1px 10px 0 rgba(145,158,171,.12);
+  background-color: rgb(54, 134, 209);
+  color:#f1e778;
+}
+
 #barra {
   background-color:rgb(54, 134, 209);
   color: #e4d529;
@@ -119,6 +152,10 @@ a img{
   border-color:#e2d760;
   box-shadow:0 0 0 .25rem #e5de8a;
   color:#226c9c;outline:0
+}
+
+.container .productos .col{
+  margin-top: 30px;
 }
 
 @keyframes slidein {

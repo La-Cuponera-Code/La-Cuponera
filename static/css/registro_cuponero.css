@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../assets/Montserrat-Regular.ttf");
+}
+
+#overlay {
+   background-color: rgba(142, 200, 250, 0.8);
+}
+
+.navbar {
+    background-color: rgb(54, 134, 209);
+    margin-bottom: 0%;
+}
+
+.navbar-text{font-family: 'Montserrat Regular';}
+.mb-5{font-family: 'Montserrat Regular';}
+.g-3{font-family: 'Montserrat Regular';}
+.mb-5{font-family: 'Montserrat Regular';}
+
+.logo{
+    width:200px;
+}
+
+.formulario {
+   background-color: rgb(255, 255, 255);
+   padding: 3% 2% 1% 2%;
+   border-radius: 50px;
+   margin-top: -5%;
+   margin-bottom: 1%;
+   overflow-y: auto; /* Permitir scroll vertical */
+}
+
+.formulario h1{
+    text-align: center; 
+    color:rgb(54, 134, 209);
+}
+
+.formulario p{
+    padding-bottom: -5%;
+}
+
+form {
+   margin-top: -5%;
+}
+
+#registro-google, #registro-facebook {
+    display: flex;
+    align-items: center;
+    background-color: white; 
+    border: solid 1px gray; 
+    color: black;
+}
+
+#registro-google{
+   margin-bottom: 1%;
+}
+
+#registro-google img, #registro-facebook img {
+    width: 5%;
+}
+
+#registro-google p, #registro-facebook p{
+    margin-bottom: -1%; 
+    margin-left: 3%;
+}
+
+@media only screen and (max-height: 554px) {
+   .registro-con {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap:nowrap;
+      max-width: 100%;
+   }
+
+   /* Estilos adicionales para los botones */
+   .registro-con button {
+      width: 49%
+   }
+
+   #registro-facebook {
+      width: 50%;
+      margin-left: -50%;
+      display: flex;
+      flex-wrap: nowrap;
+   }
+}
+
+@media only screen and (max-width: 991px) {
+   .container {
+      display: flex;
+      align-items: center;
+   }
+}
