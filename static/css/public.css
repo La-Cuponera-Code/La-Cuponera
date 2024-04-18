@@ -1,6 +1,11 @@
 @font-face {
     font-family: "Montserrat Regular";
-    src: url("Montserrat-Regular.ttf");
+    src: url("../assets/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Protest Riot Regular";
+    src: url("../assets/ProtestRiot-Regular.ttf");
 }
 
 #overlay {
@@ -73,6 +78,7 @@
 }
 
 .soy h2 {
+    font-family: "Montserrat Regular";
     background-color: transparent;
     border-radius: 10px;
     color: white;

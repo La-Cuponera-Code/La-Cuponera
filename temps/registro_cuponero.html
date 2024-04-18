@@ -19,12 +19,14 @@
       <!-- Leaflet CSS -->
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
+      <!-- Theme CSS -->
+      <link rel="stylesheet" href="../plantilla/assets/css/theme.min.css">
+
       <!-- Custom CSS -->
       <link rel="stylesheet" href="../static/css/generales.css">
       <link rel="stylesheet" href="../static/css/registro_cuponero.css">
 
-      <!-- Theme CSS -->
-      <link rel="stylesheet" href="../plantilla/assets/css/theme.min.css">
+      
    </head>
 
    <body>
@@ -121,32 +123,26 @@
                <a class="navbar-brand" href="public.html">
                <img src="../static/assets/logo.png" alt="" class="d-inline-block align-text-top logo">
                </a>
-               <span class="navbar-text" style="color: #e4d529;">
-               ¿Ya tenés una cuenta? <a href="signin.html" style="color: #e4d529; font-weight: bold;">Iniciar sesión</a>
+               <span class="navbar-text" style="color: black;">
+               ¿Ya tenés una cuenta? <a href="signin.html" style="color: #f9ec00; font-weight: bold;">Iniciar sesión</a>
                </span>
             </div>
          </nav>
          </div>
 
          <main>
-            <!-- section -->
-            <section class="my-lg-6 my-8">
                <!-- container -->
                <div class="container">
                   <!-- row -->
-                  <div class="row justify-content-center">
-                     <div class="imagen col-12 col-md-4 col-lg-4 order-lg-1 order-2">
-                        <!-- img -->
-                        <!-- <img src="../static/assets/winwin/98108100-1488-4709-9c7e-ad21fecb4790.gif" alt="" class="img-fluid" /> -->
-                     </div>
+                  <div class="row">
                      <!-- col -->
-                     <div class="formulario col-12 col-md-8 offset-lg-1 col-lg-6 order-lg-2 order-1 align-self-center">
-                        <div class="mb-lg-9 mb-5">
-                           <h1 class="mb-1 h2 fw-bold">Empezá a conseguir cupones</h1>
-                           <p>¡Bienvenido a La Cuponera! Ingresá tu correo electrónico para comenzar.</p>
+                     <div class="formulario col-12 col-md-8 col-lg-6 order-lg-1 order-1 align-self-center">
+                        <div class="mb-lg-9 mb-5 text-center">
+                           <h1 class="mb-1 h2 fw-bold titulo">Empezá a conseguir cupones</h1>
+                           <p id="subtitulo">¡Bienvenido a La Cuponera! Ingresá tu correo electrónico para comenzar.</p>
                         </div>
                         <!-- form -->
-                        <form class="needs-validation" novalidate>
+                        <form id="registration-form" class="needs-validation was-validated" novalidate>
                            <div class="row g-3">
                               <!-- col -->
                               <div class="col">
@@ -179,7 +175,7 @@
                               </div>
                               <!-- btn -->
                               <div class="col-12 d-grid">
-                                 <a type="submit"  id="registro" href="index-2 (2).html" style="background-color:#F9ED48;border: none; color: black;"  class="btn btn-primary">
+                                 <a type="submit"  id="registro" style="background-color:#f9ec00; border: none; color: black;"  class="btn btn-primary">
                                     Registrar
                                  </a>
                               </div>
@@ -201,19 +197,25 @@
                               <!-- text -->
                               <p>
                                  <small>
-                                    <a href="#!"  style=" color:#a79c03; font-weight: bold;">Términos de servicio</a>
+                                    <a href="#!"  style=" color:#f9ec00; font-weight: bold;">Términos de servicio</a>
                                     y
-                                    <a href="#!"  style=" color:#a79c03; font-weight: bold;">Política de privacidad</a>
+                                    <a href="#!"  style=" color:#f9ec00; font-weight: bold;">Política de privacidad</a>
                                  </small>
                               </p>
                            </div>
                         </form>
                      </div>
+                     <!-- col -->
+                     <div class="imagen col-12 col-md-4 col-lg-4 order-lg-2 order-2">
+                        <!-- img -->
+                        <img src="../static/assets/winwin/PoseWinWin2.gif" alt="WinWin" class="img-fluid" />
+                     </div>
                   </div>
                </div>
-            </section>
          </main>
       </div>
+         <script src="../static/js/registro.js"></script>
+
          <script src="../plantilla/assets/js/vendors/validation.js?ver=3.4"></script>
 
          <!-- Javascript-->

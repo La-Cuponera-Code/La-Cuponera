@@ -1,7 +1,16 @@
-/* Estilos personalizados */
 @font-face {
     font-family: "Montserrat Regular";
-    src: url("../static/assets/Montserrat-Regular.ttf");
+    src: url("../assets/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Protest Riot Regular";
+    src: url("../assets/ProtestRiot-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("../assets/Montserrat-SemiBold.ttf");
 }
 
 .body {
@@ -23,12 +32,12 @@
 }
 
 .navbar {
-    background-color: rgb(54, 134, 209);
+    background-color: #0088ff;
     
 }
 
 .navbar-text a{
-    background-color:rgb(230, 226, 0);
+    background-color:#f9ec00;
     border-radius: 10px;
     padding: 1px 4px 1px 4px;
 }
@@ -50,12 +59,22 @@
     width: 80%;
 }
 
+.titulo {
+    font-family: "Protest Riot Regular";
+    font-size: 40px;
+    color: #0088ff;
+ }
+ 
+ #subtitulo{
+    font-family: Montserrat SemiBold;
+ }
+
 .form-control:focus, .form-check-input:focus{
-    border-color: rgb(243, 239, 24);
+    border-color: #f9ec00;
     box-shadow: 0 0 0 0.25rem rgba(226, 230, 28, 0.25);
 }
 
 .form-check-input:checked{
-    background-color: rgb(243, 239, 24);
-    border-color: rgb(243, 239, 24);
+    background-color: #f9ec00;
+    border-color: #f9ec00;
 }

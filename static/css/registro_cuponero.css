@@ -1,6 +1,16 @@
 @font-face {
-    font-family: "Montserrat Regular";
-    src: url("../assets/Montserrat-Regular.ttf");
+   font-family: "Montserrat Regular";
+   src: url("../assets/Montserrat-Regular.ttf");
+}
+
+@font-face {
+   font-family: "Protest Riot Regular";
+   src: url("../assets/ProtestRiot-Regular.ttf");
+}
+
+@font-face {
+   font-family: "Montserrat SemiBold";
+   src: url("../assets/Montserrat-SemiBold.ttf");
 }
 
 #overlay {
@@ -8,7 +18,7 @@
 }
 
 .navbar {
-    background-color: rgb(54, 134, 209);
+    background-color: #0088ff;
     margin-bottom: 0%;
 }
 
@@ -19,6 +29,29 @@
 
 .logo{
     width:200px;
+}
+
+main{
+   height: 100%;
+}
+
+.container {
+   display: flex;
+   height: 100%;
+}
+
+.row {
+   height: 100%;
+   display: flex;
+}
+
+.titulo {
+   font-family: "Protest Riot Regular";
+   font-size: 35px;
+}
+
+#subtitulo{
+   font-family: Montserrat SemiBold;
 }
 
 .formulario {
@@ -32,7 +65,7 @@
 
 .formulario h1{
     text-align: center; 
-    color:rgb(54, 134, 209);
+    color:#0088ff;
 }
 
 .formulario p{
@@ -41,6 +74,11 @@
 
 form {
    margin-top: -5%;
+}
+
+.form-control:focus, .form-check-input:focus{
+   border-color: #f9ec00;
+   box-shadow: 0 0 0 0.25rem rgba(226, 230, 28, 0.25);
 }
 
 #registro-google, #registro-facebook {
@@ -62,6 +100,10 @@ form {
 #registro-google p, #registro-facebook p{
     margin-bottom: -1%; 
     margin-left: 3%;
+}
+
+.btn-primary:hover{
+   background-color: rgb(255, 253, 122);
 }
 
 @media only screen and (max-height: 554px) {

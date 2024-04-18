@@ -1,7 +1,17 @@
 @font-face {
     font-family: "Montserrat Regular";
     src: url("../assets/Montserrat-Regular.ttf");
-}
+ }
+ 
+ @font-face {
+    font-family: "Protest Riot Regular";
+    src: url("../assets/ProtestRiot-Regular.ttf");
+ }
+ 
+ @font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("../assets/Montserrat-SemiBold.ttf");
+ }
 
 body{font-family: "Montserrat Regular";}
 
@@ -10,14 +20,24 @@ body{font-family: "Montserrat Regular";}
 }
 
 .navbar {
-    background-color: rgb(54, 134, 209);
+    background-color: #0088ff;
     margin-bottom: 0%;
 }
+
+.titulo {
+    font-family: "Protest Riot Regular";
+    font-size: 40px;
+    color:#0088ff;
+ }
+ 
+ #subtitulo{
+    font-family: Montserrat SemiBold;
+ }
 
 #countdown {
     font-size: 24px;
     font-weight: bold;
-    color: #e4d529;
+    color: #f9ec00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +63,7 @@ body{font-family: "Montserrat Regular";}
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#ffec3f;
+    background-color:#f9ec00;
     color: black;
     border-radius: 10px;
     padding: 1% 1% 1% 1%;
