@@ -35,6 +35,11 @@ main{
    height: 100%;
 }
 
+#winwin {
+   position: fixed;
+   z-index: -1;
+}
+
 .container {
    display: flex;
    height: 100%;
@@ -56,11 +61,10 @@ main{
 
 .formulario {
    background-color: rgb(255, 255, 255);
-   padding: 3% 2% 1% 2%;
+   padding: 3% 2% 3% 2%;
    border-radius: 50px;
    margin-top: -5%;
    margin-bottom: 1%;
-   overflow-y: auto; /* Permitir scroll vertical */
 }
 
 .formulario h1{

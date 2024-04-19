@@ -1,134 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-   
-<!-- Mirrored from freshcart.codescandy.com/pages/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 03:19:18 GMT -->
+<html lang="es">
 <head>
-      <!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta content="Codescandy" name="author">
-      <title>Inicia sesión en LaCuponera</title>
-      <!-- Favicon icon-->
-      <link rel="shortcut icon" type="image/png" href="../static/assets/cupon%20(2).png?ver=2.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Codescandy" name="author">
+    <title>Inicia sesión en LaCuponera</title>
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/png" href="../static/assets/cupon%20(2).png?ver=2.0">
 
+    <!-- Libs CSS -->
+    <link href="../plantilla/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../plantilla/assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
+    <link href="../plantilla/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/js/escritorio_cuponeros.js"></script>
 
-<!-- Libs CSS -->
-<link href="../plantilla/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
-<link href="../plantilla/assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
-<link href="../plantilla/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- Leaflet CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
-<script src="../static/js/escritorio_cuponeros.js"></script>
+    <link rel="stylesheet" href="../plantilla/assets/css/theme.min.css">
 
-<link rel="stylesheet" href="../plantilla/assets/css/theme.min.css">
-<style>
-   .navbar {
-      background-color: rgb(54, 134, 209);
-   }
-@font-face {
-    font-family: "Montserrat Regular";
-    src: url("../static/assets/Montserrat-Regular.ttf");
-}
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/generales.css">
+    <link rel="stylesheet" href="../static/css/registro_cuponero.css">
+</head>
 
-.navbar-text{
-   font-family: 'Montserrat Regular';
-}
+   <body>
+      <div id="map"></div>
+      
+      <div id="overlay">
+         <div class="border-bottom shadow-sm">
+            <nav class="navbar navbar-light py-2">
+                  <div class="container justify-content-center justify-content-lg-between">
+                     <a class="navbar-brand" href="public.html">
+                        <img src="../static/assets/logo.png" alt="" class="d-inline-block align-text-top logo">
+                     </a>
+                     <span class="navbar-text" style="color: black;">
+                        ¿Aún no tenés tu cuenta? <a href="signup.html" style="color: #f9ec00; font-weight: bold;">Registrate</a>
+                     </span>
+                  </div>
+            </nav>
+         </div>
 
-.mb-5{font-family: 'Montserrat Regular';}
-.g-3{font-family: 'Montserrat Regular';}
+         <main>
+            <!-- <img id="winwin" src="../static/assets/winwin/PoseWinWin2.gif" alt="" class="img-fluid" /> -->
 
-.mb-5{font-family: 'Montserrat Regular';}
-
- 
-  .logo{
-    width:200px;
-  }
-</style>
-   </head>
-
-<body>
-<div class="border-bottom shadow-sm">
-  <nav class="navbar navbar-light py-2">
-    <div class="container justify-content-center justify-content-lg-between">
-      <a class="navbar-brand" href="../plantilla/temps/index-2.html">
-        <img src="../static/assets/logo.png" alt="" class="d-inline-block align-text-top logo">
-      </a>
-      <span class="navbar-text">
-        ¿Aún no tenés tu cuenta? <a href="signup.html">Registrate</a>
-      </span>
-    </div>
-  </nav>
-</div>
-
-        <main>
-         <section class="my-lg-14 my-8">
             <div class="container">
-               <!-- row -->
-               <div class="row justify-content-center align-items-center">
-                  <div class="col-12 col-md-6 col-lg-4 order-lg-1 order-2">
-                     <!-- img -->
-                     <img src="../static/assets/login.png" alt="" class="img-fluid" />
-                  </div>
-                  <!-- col -->
-                  <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
-                     <div class="mb-lg-9 mb-5">
-                        <h1 class="mb-1 h2 fw-bold">Ingresá a Cuponera</h1>
-                        <p>¡Bienvenido de nuevo a Cuponera! Ingresá tu correo electrónico para comenzar.
-                        </p>
-                     </div>
-
-                     <form id="registrationForm" class="needs-validation" novalidate onsubmit="submitRegistrationForm(event)">
-                        <div class="row g-3">
-                           <!-- row -->
-
-                           <div class="col-12">
-                              <!-- input -->
-                              <label for="formSigninEmail" class="form-label visually-hidden">Email</label>
-                              <input type="email" class="form-control" id="formSigninEmail" placeholder="Email" required />
-                              <div class="invalid-feedback">Por favor, ingresá tu mail</div>
-                           </div>
-                           <div class="col-12">
-                              <!-- input -->
-                              <div class="password-field position-relative">
-                                 <label for="formSigninPassword" class="form-label visually-hidden">Contraseña</label>
-                                 <div class="password-field position-relative">
-                                    <input type="password" class="form-control fakePassword" id="formSigninPassword" placeholder="********" required />
-                                    <span><i class="bi bi-eye-slash passwordToggler"></i></span>
-                                    <div class="invalid-feedback">Por favor, ingresá tu contraseña</div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="d-flex justify-content-between">
-                              <!-- form check -->
-                              <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                 <!-- label -->
-                                 <label class="form-check-label" for="flexCheckDefault">Recordarme</label>
-                              </div>
-                              <div>
-                                 <a style=" color:#a79c03;"href="forgot-password.html">¿Olvidaste tu contraseña?</a>
-                              </div>
-                           </div>
-                           <!-- btn -->
-                           <div class="col-12 d-grid"><button onclick="submitRegistrationForm(event)" type="submit" id="sesion" style="background-color:#F9ED48;border: none; color: black;" class="btn btn-primary">Iniciar Sesión</button></div>
-                           <!-- link -->
-                           <div>
-                            ¿Aún no tenés una cuenta?
-                              <a style=" color:#a79c03;" href="signup.html">Registrarse</a>
-                           </div>
+                  <div class="row justify-content-center align-items-center">
+                     <div class="formulario col-11 col-md-8 col-lg-6 mx-auto">
+                        <div class="mb-lg-9 mb-5">
+                              <h1 class="mb-1 h2 fw-bold titulo">Ingresá a Cuponera</h1>
+                              <p id="subtitulo">¡Bienvenido de nuevo a Cuponera! Ingresá tu correo electrónico para comenzar.</p>
                         </div>
-                     </form>
+                        <form id="registrationForm" class="needs-validation" novalidate onsubmit="submitRegistrationForm(event)">
+                              <div class="row g-3">
+                                 <div class="col-12">
+                                    <label for="formSigninEmail" class="form-label visually-hidden">Email</label>
+                                    <input type="email" class="form-control" id="formSigninEmail" placeholder="Email" required />
+                                    <div class="invalid-feedback">Por favor, ingresá tu mail</div>
+                                 </div>
+                                 <div class="col-12">
+                                    <div class="password-field position-relative">
+                                          <label for="formSigninPassword" class="form-label visually-hidden">Contraseña</label>
+                                          <div class="password-field position-relative">
+                                             <input type="password" class="form-control fakePassword" id="formSigninPassword" placeholder="********" required />
+                                             <span><i class="bi bi-eye-slash passwordToggler"></i></span>
+                                             <div class="invalid-feedback">Por favor, ingresá tu contraseña</div>
+                                          </div>
+                                    </div>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                          <label class="form-check-label" for="flexCheckDefault">Recordarme</label>
+                                    </div>
+                                    <div>
+                                          <a style=" color:#f9ec00;"href="forgot-password.html">¿Olvidaste tu contraseña?</a>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 d-grid"><button onclick="submitRegistrationForm(event)" type="submit" id="sesion" style="background-color:#f9ec00;border: none; color: black;" class="btn btn-primary">Iniciar Sesión</button></div>
+                                 <div>¿Aún no tenés una cuenta? <a style=" color:#f9ec00;" href="signup.html">Registrarse</a></div>
+                              </div>
+                        </form>
+                     </div>
                   </div>
-               </div>
             </div>
-         </section>
-      </main>
+         </main>
+      </div>
 
-<script src="../plantilla/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../plantilla/assets/libs/simplebar/dist/simplebar.min.js"></script>
-
- <script src="../plantilla/assets/js/theme.min.js"></script>
-
+      <!-- JS -->
+      <script src="../static/js/map.js"></script>
+      
+      <!-- Leaflet Script -->
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      
+      <script src="../plantilla/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../plantilla/assets/libs/simplebar/dist/simplebar.min.js"></script>
+      
+      <script src="../plantilla/assets/js/theme.min.js"></script>
+      
       <script src="../plantilla/assets/js/vendors/password.js"></script>
       <script src="../plantilla/assets/js/vendors/validation.js?ver=2.3"></script>
    </body>
