@@ -13,10 +13,6 @@
     src: url("../assets/Montserrat-SemiBold.ttf");
 }
 
-.body {
-    font-family: 'Montserrat Regular';
-}
-
 .container {
     position: relative;
     width: 100%;
@@ -31,17 +27,6 @@
     z-index: 1; /* Coloca el overlay encima del mapa */
 }
 
-.navbar {
-    background-color: #0088ff;
-    
-}
-
-.navbar-text a{
-    background-color:#f9ec00;
-    border-radius: 10px;
-    padding: 1px 4px 1px 4px;
-}
-
 .bottom-image {
     position: fixed;
     z-index: -5;
@@ -51,30 +36,11 @@
     height: 100vh
 }
 
-.logo {
-    width: 200px;
-}
-
 .col {
     width: 80%;
 }
 
 .titulo {
-    font-family: "Protest Riot Regular";
     font-size: 40px;
     color: #0088ff;
- }
- 
- #subtitulo{
-    font-family: Montserrat SemiBold;
- }
-
-.form-control:focus, .form-check-input:focus{
-    border-color: #f9ec00;
-    box-shadow: 0 0 0 0.25rem rgba(226, 230, 28, 0.25);
-}
-
-.form-check-input:checked{
-    background-color: #f9ec00;
-    border-color: #f9ec00;
 }

@@ -114,9 +114,14 @@
 }
 
 @media only screen and (max-width: 706px) {
-    .btnes-container{
+    .content { 
+        width: 100%;
+    }
+
+    /* .btnes-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .btn-container {
@@ -127,7 +132,7 @@
 
     .btn-soy {
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
         align-items: flex-start;
     }
 
@@ -154,5 +159,5 @@
 
     .btn-circulo{
         margin-top: 0;
-    }
+    } */
 }

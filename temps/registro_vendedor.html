@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    
 <!-- Mirrored from freshcart.codescandy.com/pages/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 03:19:19 GMT -->
 <head>
@@ -9,7 +9,7 @@
 <meta content="Codescandy" name="author">
       <title>Registrate en LaCuponera</title>
       <!-- Favicon icon-->
-<link rel="shortcut icon" type="image/png" href="../static/assets/cupon%20(2).png?ver=2.0">
+<link rel="shortcut icon" type="image/png" href="../static/assets/vendedor.png">
 
 
 <!-- Libs CSS -->
@@ -21,6 +21,8 @@
 
 <!-- Theme CSS -->
 <link rel="stylesheet" href="../plantilla/assets/css/theme.min.css">
+
+<link rel="stylesheet" href="../static/css/generales.css">
 <link rel="stylesheet" href="../static/css/registro_vendedor.css">
    </head>
 
@@ -75,8 +77,8 @@
                                             </div>
                                             <div class="col mb-3">
                                                 <!-- input -->
-                                                <label for="storeAddress" class="form-label">Dirección / Tienda Física</label>
-                                                <input type="text" class="form-control" id="storeAddress" placeholder="Ingresa la direccion de tu tienda" required>
+                                                <label for="storeAddress" class="form-label">Tienda Física</label>
+                                                <input type="text" class="form-control" id="storeAddress" placeholder="Direccion de tu tienda física" required>
                                                 <div class="invalid-feedback">Por favor, ingresá la direccipon de tu tienda</div>
                                             </div>
                                         </div>
@@ -113,11 +115,19 @@
                                                 <input type="text" class="form-control" id="representativeName" placeholder="Representante Legal" required>
                                                 <div class="invalid-feedback">Por favor, ingresá los datos del Representante Legal de la tienda</div>
                                             </div>
+                                        </div>
+                                        <div class="row g-3">
                                             <div class="col mb-3">
                                                 <!-- input -->
-                                                <label for="companyNIT" class="form-label">NIT De empresa *</label>
+                                                <label for="companyNIT" class="form-label">NIT De empresa</label>
                                                 <input type="number" class="form-control" id="companyNIT" placeholder="NIT" required>
                                                 <div class="invalid-feedback">Por favor, ingresá tu Número de identificación tributaria (NIT)</div>
+                                            </div>
+                                            <div class="col mb-3">
+                                                <!-- input -->
+                                                <label for="phoneNumber" class="form-label">Teléfono de Contacto</label>
+                                                <input type="text" class="form-control" id="phoneNumber" placeholder="Número de Contacto / Whatsapp Business" required>
+                                                <div class="invalid-feedback">Por favor, ingresá un numero de telefono</div>
                                             </div>
                                         </div>
                                         <div class="row g-3">
@@ -126,12 +136,6 @@
                                                 <label for="formSignupEmail" class="form-label">Email</label>
                                                 <input type="email" class="form-control" id="formSignupEmail" placeholder="Correo electrónico" required />
                                                 <div class="invalid-feedback">Por favor, ingresá el mail de tu marca</div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <!-- input -->
-                                                <label for="phoneNumber" class="form-label">Número Telefonico de Contacto</label>
-                                                <input type="text" class="form-control" id="phoneNumber" placeholder="Número de Contacto / Whatsapp Business" required>
-                                                <div class="invalid-feedback">Por favor, ingresá un numero de telefono</div>
                                             </div>
                                         </div>
                                         <div class="row g-3">
@@ -151,112 +155,41 @@
                                         </div>
                                         <div class="row g-3">
                                             <div class="col mb-3">
-                                                <div id="col1">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para ti" id="parati">
-                                                        <label class="form-check-label" for="parati">
-                                                            Para ti
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paralospeludos">
-                                                        <label class="form-check-label" for="paralospeludos">
-                                                            Para los peludos
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paradisfrutar">
-                                                        <label class="form-check-label" for="paradisfrutar">
-                                                            Para disfrutar
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paratupaladar">
-                                                        <label class="form-check-label" for="paratupaladar">
-                                                            Para tu paladar
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paraquienamas">
-                                                        <label class="form-check-label" for="paraquienamas">
-                                                            Para quien amas
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paratuhogar">
-                                                        <label class="form-check-label" for="paratuhogar">
-                                                            Para tu hogar
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paratubienestar">
-                                                        <label class="form-check-label" for="paratubienestar">
-                                                            Para tu bienestar
-                                                        </label>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <div id="col2">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paratumente">
-                                                        <label class="form-check-label" for="paratumente">
-                                                            Para tu mente
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="inmobiliariayautomotriz">
-                                                        <label class="form-check-label" for="inmobiliariayautomotriz">
-                                                            Inmobiliaria & Automotriz
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="tecnologia">
-                                                        <label class="form-check-label" for="tecnologia">
-                                                            Tecnología
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paratumesa">
-                                                        <label class="form-check-label" for="paratumesa">
-                                                            Para tu mesa
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="paralosgobernantes">
-                                                        <label class="form-check-label" for="paralosgobernantes">
-                                                            Para los gobernantes
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="serviciosprofesionales">
-                                                        <label class="form-check-label" for="serviciosprofesionales">
-                                                            Servicios Profesionales
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="Para los peludos" id="reciclaygana">
-                                                        <label class="form-check-label" for="reciclaygana">
-                                                            Reciclá & Ganá
-                                                        </label>
-                                                    </div>
-                                                </div>            
+                                                <select class="form-select" id="categories" name="categories">
+                                                    <optgroup>
+                                                        <option value="categorias">Categorías</option>
+                                                        <option value="parati">Para ti</option>
+                                                        <option value="paralospeludos">Para los peludos</option>
+                                                        <option value="paradisfrutar">Para disfrutar</option>
+                                                        <option value="paratupaladar">Para tu paladar</option>
+                                                        <option value="paraquienamas">Para quien amas</option>
+                                                        <option value="paratuhogar">Para tu hogar</option>
+                                                        <option value="paratubienestar">Para tu bienestar</option>
+                                                        <option value="paratumente">Para tu mente</option>
+                                                        <option value="inmobiliariayautomotriz">Inmobiliaria & Automotriz</option>
+                                                        <option value="tecnologia">Tecnología</option>
+                                                        <option value="paratumesa">Para tu mesa</option>
+                                                        <option value="paralosgobernantes">Para los gobernantes</option>
+                                                        <option value="serviciosprofesionales">Servicios Profesionales</option>
+                                                        <option value="reciclaygana">Reciclá & Ganá</option>
+                                                    </optgroup>
+                                                </select>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- btn -->
                                         <div class="col-12 d-grid">
                                             <button type="submit"  id="registro"  style="background-color:#F9ED48;border: none; color: black;"  class="btn btn-primary">Registrar</button>
                                         </div>
 
                                         <!-- text -->
-                                        <p>
+                                        <!-- <p>
                                             <small>
-                                                <a href="#!"  style=" color:#f9ec00;">Términos de servicio</a>
+                                                <a href="#!"  style=" color:#f9ec00; text-shadow: 1px 1px 2px black;">Términos de servicio</a>
                                                 y
-                                                <a href="#!"  style=" color:#f9ec00;">Política de privacidad</a>
+                                                <a href="#!"  style=" color:#f9ec00; text-shadow: 1px 1px 2px black;">Política de privacidad</a>
                                             </small>
-                                        </p>
+                                        </p> -->
                                     </form>
                                 </div>
                         </div>
